@@ -6,9 +6,10 @@ html, body, .splash{
 }
 
 body {
-	background:url("/img/BackgroundImagePNG.png");
+	/*background:url("/img/BackgroundImagePNG.png");*/
 	background-size:cover;
-	background-color: #336699;
+	/*background-color: #336699;*/
+	background-color: #FFFFFF;
 	font-family: Orator Std;
 	font-size: 14px;
 	color: white;
@@ -23,35 +24,65 @@ body {
 }
 
 h1{
-	font-size: 50px;
+	font-size: 12vw;
 }
 
 h2{
 	font-family: Reenie Beanie;
-	font-size: 30px;
+	font-size: 1
+}
+
+h3{
+	font-size: 3vw;
 }
 
 section{
-	background-color: #336699;
+	/*background-color: #336699;*/
 	min-height: 720px;
 	width 100%;
 	margin: 0;
 	padding: 0;
 }
 
+article{
+	height: 100%;
+	width: 100%;
+}
+
 .splash{
-	background: url("Whirligig2.JPG") no-repeat center center; 
+	/*background: url("Whirligig2.JPG") no-repeat center center; */
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-  	margin: 1%;
-  	border: 3px solid white;
+  	background-color:#336699;
+  	/*margin: 1%;
+  	border: 3px solid white;*/
 }
 
-.title{
-	position: fixed;
+.splash h1{
+	margin:0vw;
+}
+
+.splash h3{
+	font-size: 3vw;
+	margin: 0vw;
+	margin-left: 1vw;
+}
+
+/* absolute position, pushed 50 percent from top and left (by top left corner), then transformed to adjust.*/
+.centered{
+	/*position: fixed;
 	top: 50%;
 	left: 50%;
+	transform: translate(-50%, -50%);*/
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-right: -50%;
 	transform: translate(-50%, -50%);
+}
+
+.info p{
+	color: black;
 }
