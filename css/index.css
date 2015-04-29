@@ -29,11 +29,11 @@ h1{
 
 h2{
 	font-family: Reenie Beanie;
-	font-size: 1
+	font-size: 4vw;
 }
 
 h3{
-	font-size: 3vw;
+	font-size: 2vw;
 }
 
 section{
@@ -83,6 +83,21 @@ article{
 	transform: translate(-50%, -50%);
 }
 
-.info p{
+.info{
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-color:#FFFFFF;
+}
+.about{
+	padding: 10%;
+}
+
+.about p{
+	color: black;
+}
+
+.about h2{
 	color: black;
 }
