@@ -3,13 +3,65 @@
 /*override Bootstrap jumbotron for full screen landing page*/
 html, body{
 	height:100%;
-	min-height:100%;
+	margin: 0pxs;
 }
 
 /*Full screen splash page*/
 .jumbotron{
 	height:100%;
 }
+
+.splash{
+	background-color:#336699;
+}
+
+.fullscreen{
+	height:100%;
+	min-height:100%;
+	overflow-y: hidden;
+}
+
+/*reset page font size to allow easy translation (0.8em = 8px) 62.5% */
+body {
+	background-size:cover;
+	background-color: #FFFFFF;
+	font-family: Orator Std;
+	font-size: 15px;
+}
+
+@font-face{
+	font-family: Orator Std;
+	src: url(/fonts/OratorStd.otf);
+	font-family: Draftsman;
+	src: url(/fonts/Draftsman.ttf);
+	font-family: 'Reenie Beanie', cursive;
+}
+
+.splash h1{
+	font-size: 12vw;
+	margin:0vw;
+	color: #FFFFFF;
+}
+
+/*change this from vw later */
+h2{
+	font-family: Reenie Beanie;
+	font-size: 4vw;
+}
+
+/*change this later */
+h3{
+	font-size: 2vw;
+}
+
+.splash h3{
+	font-size: 3vw;
+	margin: 0vw;
+	margin-left: 1vw;
+	color: #FFFFFF;
+
+}
+
 /*
 .jumbotron{
 	-webkit-background-size: cover;
@@ -19,10 +71,12 @@ html, body{
   	background-color:#336699;
 }
 */
-
-.full{
+/*
+.fullscreen{
 	height:100%;
+	min-height:100%;
 }
+*/
 
 /*center div horizontally-vertically to screen size*/
 /*.absolute-center{
