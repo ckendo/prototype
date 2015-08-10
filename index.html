@@ -5,17 +5,31 @@
 	<title>The Prototype</title>
 
 	<meta charset = "utf-8"> <!--character set-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 	<meta name="viewport" content = "width=device-width, initial-scale=1"><!--mobile responsiveness, ensures proper rendering and zooming-->
 
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 
 	<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie|Rock+Salt' rel='stylesheet' type='text/css'>
 
 	<!--Use respond.js for older versions of IE-->
-	<script src = "js/respond.js"></script>
+	<!--Warning: Respond.js does not work if you view page view file://-->
+	<!--<script src = "js/respond.js"></script>-->
 	<!--<script src="/js/script.js"></script>-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+  	<script src="js/bootstrap.min.js"></script>
+	<!-- Include Masonry -->
+	
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>-->
+	<script src="js/masonry.pkgd.min.js"></script>
+
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="jumbotron splash">
@@ -26,28 +40,117 @@
 			</div>
 		</header>
 	</div>	
-	<div class = "container-fluid fullscreen">
+
+	<!-- <div id="grid" class="container"> -->
+
+	<div class = "container">
 		<section id ="intro">
+			<div class = "row spacer">
+				<div class="col-lg-12"></div>
+			</div>
 			<div class = "row">
 				<div class = "col-sm-1 col-md-2">
 				</div>
 				<div class = "col-xs-12 col-sm-10 col-md-8">
 					<h2>Welcome to The Prototype</h2>
+					<br>
 					<p>The Science Center presents an exhibit on the design process, titled "The Prototype".</p>
 					<p>From the Apple iPad, to spinning chairs, to city plazas, and to the cars we drive, the products, structures, and spaces we use in our day-to-day lives are the results of collaborative brainstorming, revisions, and many dead ends. These products of design each begin with a prototype - sketches recorded on coffee shop napkins, cardboard mockups, and blueprints.</p>
 					<p>"The Prototype" focuses on the design process of the products, spaces, objects, and technology we use in our everyday lives - structures that must be realized with consideration of the three principles of design: beauty, sustainability, and utility. From areas such as engineering, industrial design, architecture, urban studies, computer science, and visual art, this exhibit showcases parts of the design process that are not usually seen by the user, focusing on the inspiration, brainstorming, collaborations, revisions, and dead ends that happen before a product, structure, or space is ever realized. This exhibit showcases the sketches, mathematics, physics, physical prototyping, 3D printing, and digital rendering and simulations, through programs such as Maya, Rhino, SketchUp, and AutoCAD, that make up this process. </p>
 				</div>
-				<div class = "col-sm-1 col-md-2"
+				<div class = "col-sm-1 col-md-2">
+				</div>
 			</div>
 		</section>
 	</div> <!--end intro container -->
-	<div class = "container-fluid">
+	<div class = "container">
 		<section id = "gallery">
-			<p>(Images here with Masonry)</p>
+			<div class = "row spacer">
+				<div class="col-lg-12"></div>
+			</div>
+			<div id="grid">
+				<div id="posts">
+					<div class = "post">
+						<img src="img/thumbnails/thumbarchitecture.JPG"><br>
+						<br>
+						<strong>Where is the Architecture Button</strong><br>
+						<small>Connie Wang, Hanson Cheng, Ana Cristina Baquerizo</small>
+					</div>
+					<div class = "post">
+						<img src="img/thumbnails/thumbbath.jpg"><br>
+						<br>
+						<strong>Bathhouse</strong><br>
+						<small>Andres Chang</small>
+					</div>
+					<div class = "post">
+						<img src="img/thumbnails/thumbbookwheel.jpg"><br>
+						<br>
+						<strong>Bookwheel Social Center</strong><br>
+						<small>Stan Lichens</small>
+					</div>
+					<div class = "post">
+						<img src="img/thumbnails/thumbbowl.jpg"><br>
+						<br>
+						<strong>Rock Bowls</strong><br>
+						<small>Eli Block</small>
+					</div>
+					<div class = "post">
+						<img src="img/thumbnails/thumbcanto.JPG"><br>
+						<br>
+						<strong>Canto Glacier</strong><br>
+						<small>Scarlett Xin Meng, Yanan Wu</small>
+					</div>
+					<div class = "post">
+						<img src="img/thumbnails/thumbchair.JPG"><br>
+						<br>
+						<strong>Dynamic Seating</strong><br>
+						<small>Benjamin Basseches</small>
+					</div>
+					<div class = "post">
+						<img src="img/thumbnails/thumbinternet.jpg"><br>
+						<br>
+						<strong>Internet Sensations Wand</strong><br>
+						<small>Ijeoma Azodo and Horatio Han</small>
+					</div>
+					<div class = "post">
+						<img src="img/thumbnails/thumbphotographicrelief.jpg"><br>
+						<br>
+						<strong>Photographic Relief</strong><br>
+						<small>Horatio Han</small>
+					</div>
+					<div class = "post">
+						<img src="img/thumbnails/thumbradicalis.jpg"><br>
+						<br>
+						<strong>Radicalis</strong><br>
+						<small>Michael Yurgeles</small>
+					</div>
+					<div class = "post">
+						<img src="img/thumbnails/thumbsimulation.jpg"><br>
+						<br>
+						<strong>Simulation</strong><br>
+						<small>Chris Sancomb</small>
+					</div>
+					<div class = "post">
+						<img src="img/thumbnails/thumbsteam.jpg"><br>
+						<br>
+						<strong>STEAM Pavilion</strong><br>
+						<small>STEAM and Pneuhaus</small>
+					</div>
+					<div class = "post">
+						<img src="img/thumbnails/thumbwearable.jpg"><br>
+						<br>
+						<strong>Wearable Toy Guitar</strong><br>
+						<small>Lily Fan</small>
+					</div>
+				</div>
+			</div>
 		</section>
 	</div> <!--end gallery container -->
-	<div class = "container-fluid fullscreen">
+	<div class = "container">
 		<section id = "visit">
+			<div class = "row spacer">
+				<div class="col-lg-12"></div>
+			</div>
 			<div class="row"> <!--page header -->
 				<div class = "col-md-2">
 				</div>
@@ -66,12 +169,12 @@
 		  				<strong>Science Center</strong><br>
 		  				Brown University<br>
 		  				Sciences Library, 3rd Floor<br>
-		  				<a href="https://www.google.com/maps/place/Sciences+Library/@41.8269586,-71.4001563,17z/data=!3m1!4b1!4m2!3m1!1s0x89e4453b55d4f985:0xc4db82abe2ad6d17">201 Thayer Street</a><br>
+		  				<a href="https://www.google.com/maps/place/Sciences+Library/@41.8269586,-71.4001563,17z/data=!3m1!4b1!4m2!3m1!1s0x89e4453b55d4f985:0xc4db82abe2ad6d17" target="_blank">201 Thayer Street</a><br>
 		  				Providence, <abbr title="Rhode Island">RI</abbr> 02912<br>
 		  				<abbr title="Phone">P:</abbr> (401) 863-6890
 					</address>
-					<p>Located on the third floor of the <a href="http://library.brown.edu/about/scili/">Sciences Library</a>, the Science Center follows Sciences Library hours of operation. To view upcoming schedules and changes, please click <a href="http://library.brown.edu/hours/index.php?cur_library=hours_sci">here.</a></p>
-					<h4>Hours</h4><br/>
+					<p>Located on the third floor of the <a href="http://library.brown.edu/about/scili/" target="_blank">Sciences Library</a>, the Science Center follows Sciences Library hours of operation. To view upcoming schedules and changes, please click <a href="http://library.brown.edu/hours/index.php?cur_library=hours_sci" target="_blank">here.</a></p> <br/>
+					<h4>Hours</h4>
 					<ul class="list-unstyled">
 						<li>Monday-Thursday: 8:30 am-2:00 am</li>
 						<li>Friday: 8:30 am-10:00 pm</li>
@@ -82,14 +185,15 @@
 				</div> <!--end left column-->
 				<div class = "col-md-4">
 					<h4>About the Science Center</h4>
-					<p>Brown's <a href="http://www.brown.edu/academics/science-center/">Science Center</a> is a state-of-the-art facility that supports teaching and learning in the sciences. The Center houses academic mentoring and support programs and serves as the campus clearinghouse for information about research and fellowship opportunities at Brown and around the world. As a study, collaborative, and exhibit space, bringing together faculty and students from across the science disciplines, the Science Center promotes curricular innovation, helps students achieve their academic goals, and fosters a community of science at Brown.</p>
+					<p>Brown's <a href="http://www.brown.edu/academics/science-center/" target="_blank">Science Center</a> is a state-of-the-art facility that supports teaching and learning in the sciences. The Center houses academic mentoring and support programs and serves as the campus clearinghouse for information about research and fellowship opportunities at Brown and around the world. As a study, collaborative, and exhibit space, bringing together faculty and students from across the science disciplines, the Science Center promotes curricular innovation, helps students achieve their academic goals, and fosters a community of science at Brown.</p>
+					<br/>
 					<p>Get in touch at <a href="mailto:brownsciencecenter@gmail.com">brownsciencecenter@gmail.com</a></p>
 					<ul class = "list-unstyled">
 						<li>(add social icons here)</li>
-						<li><a href="http://www.brown.edu/academics/science-center/">Website</a></li>
-						<li><a href= "https://www.facebook.com/BrownScienceCenter">Facebook</a></li>
-						<li><a href="https://twitter.com/BrownSciCenter">Twitter</a></li>
-						<li><a href="https://instagram.com/brownscicenter/">Instagram</a></li>
+						<li><a href="http://www.brown.edu/academics/science-center/" target="_blank">Website</a></li>
+						<li><a href= "https://www.facebook.com/BrownScienceCenter" target="_blank">Facebook</a></li>
+						<li><a href="https://twitter.com/BrownSciCenter" target="_blank">Twitter</a></li>
+						<li><a href="https://instagram.com/brownscicenter/" target="_blank">Instagram</a></li>
 					</ul>
 				</div><!--end right column -->
 				<div class = "col-md-2">
@@ -97,8 +201,11 @@
 			</div> <!--end row div -->
 		</section>
 	</div> <!-- end visit container -->
-	<div class = "container-fluid fullscreen">
+	<div class = "container">
 		<section id = "team">
+			<div class = "row spacer">
+				<div class="col-lg-12"></div>
+			</div>
 			<div class="row"> <!--page header -->
 				<div class = "col-md-2">
 				</div>
@@ -113,7 +220,7 @@
 				</div>
 				<div class = "col-md-5">
 					<div class ="bios">
-						<h3>Exhibit Staff</h3>
+						<h4>Exhibit Staff</h4>
 						<ul class ="list-unstyled">
 							<li>(bios and images?, emails, responsibilities, site, pamphlet, etc)</li>
 							<li>Kenji Endo</li>
@@ -122,7 +229,7 @@
 						</ul>
 					</div>
 					<div class = "thanks">
-						<h3>Special thanks to:</h3>
+						<h4>Special thanks to:</h4>
 						<ul class ="list-unstyled">
 							<li>Jodie Gill</li>
 							<li>David Targan</li>
@@ -134,7 +241,7 @@
 				</div>
 				<div class = "col-md-2">
 					<aside>
-						<p>Site made in 2015 with Orator Std, Draftsman, built with Bootstrap, Hypertext Markup Language, Cascading Style Sheets, and JQuery (?). Created by <a href ="ckendo.weebly.com">Kenji Endo</a>.</p>
+						<p>Site made in 2015 with Orator Std, Draftsman, built with Bootstrap, Hypertext Markup Language, Cascading Style Sheets, and JQuery (?). Created by <a href ="ckendo.weebly.com" target="_blank">Kenji Endo</a>.</p>
 						<p>Say hello at <a href="mailto:brownsciencecenter@gmail.com">brownsciencecenter@gmail.com</a></p>
 					</aside>
 				</div>
@@ -143,12 +250,14 @@
 			</div> <!--end row -->
 		</section>
 	</div> <!--end team container -->
-	<div class = "container-fluid">
+	<div class = "container">
+		<div class = "row spacer">
+			<div class="col-lg-12"></div>
+		</div>
 		<footer class ="text-center">
 			<p><small>&copy; Brown University Science Center 2015. Images courtesy of the artists.</small></p>
 		</footer>
 	</div> <!-- end footer container -->
-	
 	<!--
 	<section class="splash" id="cover">
 		<div class="centered">
@@ -171,9 +280,5 @@
 		</div>
 	</section>
 	-->
-	<!-- javascript -->
-	<!--Placed at end of doc so page loads faster-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
