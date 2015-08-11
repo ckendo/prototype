@@ -24,22 +24,55 @@ html, body{
 	background-color:#336699;
 }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+/*Change to hand on hover */
+/*li { cursor: pointer; cursor: hand; }*/
 
-/* Small devices (tablets, 768px and up) */
-/*@media (min-width: @screen-sm-min) { ... }*/
-
-/* Medium devices (desktops, 992px and up) and Large devices (large desktops, 1200px and up) */
-/*@media (min-width: @screen-md-min) and (min-width: @screen-lg-min) {
-	/*only apply fullscreen effect for medium or larger */
-	/*.fullscreen{
-	height:100%;
-	min-height:100%;
-	overflow-y: hidden;
-	}
+/*Modal windows*/
+.img-responsive{
+	cursor: pointer;
+	-webkit-background-clip: none;
+	-webkit-box-shadow: none;
 }
-*/
+
+.modal-header{
+	border-bottom: none;
+}
+
+div.modal-content{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.post .img-responsive{
+	margin-bottom: -20px;
+}
+
+.modal-backdrop {
+   background-color: white;
+}
+
+.modal-backdrop.in{
+	opacity: 1;
+}
+
+.static{
+	top: 0;
+	position:fixed;
+
+}
+
+/* Small devices, Medium, and Large Devices*/
+
+
+@media (min-width: 768px) {
+	.modal .modal-dialog { width: 768px; }
+}
+
 
 .fullscreen{
 	height:100%;
@@ -85,6 +118,15 @@ h4{
 	font-weight: 400;
 }
 
+h5{
+	font-size: 120%;
+}
+
+.description{
+	font-size: 90%;
+	margin-top: 8px;
+	margin-bottom: 20px;
+}
 .splash h3{
 	font-size: 3vw;
 	margin: 0vw;
@@ -95,6 +137,10 @@ h4{
 
 a:hover {
 	color: #000;
+}
+
+a {
+	color: #336699;
 }
 
 /*
@@ -157,7 +203,7 @@ a:hover {
 #grid.container .post img { padding: 0; }
 
 
-/* Medium devices */
+/* Small devices */
 
 @media (min-width: 768px) {
 	#grid > #posts .post { width: 335px; }

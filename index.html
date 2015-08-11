@@ -16,20 +16,26 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie|Rock+Salt' rel='stylesheet' type='text/css'>
 
+	<!--Font Awesome social glyphicons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+
 	<!--Use respond.js for older versions of IE-->
 	<!--Warning: Respond.js does not work if you view page view file://-->
-	<!--<script src = "js/respond.js"></script>-->
-	<!--<script src="/js/script.js"></script>-->
+	<script src = "js/respond.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  	<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
-  	<script src="js/bootstrap.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  	<!--<script src="js/bootstrap.min.js"></script>-->
 	<!-- Include Masonry -->
 	
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>-->
-	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+	<!--<script src="js/masonry.pkgd.min.js"></script>-->
 
 	<script src="js/script.js"></script>
+
+	<!--Delete this -->
+	<!--<script src="js/modal.js"></script>-->
 </head>
 <body>
 	<div class="jumbotron splash">
@@ -71,73 +77,320 @@
 			<div id="grid">
 				<div id="posts">
 					<div class = "post">
-						<img src="img/thumbnails/thumbarchitecture.JPG"><br>
+						<!-- Image trigger modal -->
+						<!--<img src="img/thumbnails/thumbarchitecture.JPG" class="img-responsive" alt="Click for more"><br>
+						<a data-toggle="modal" data-target="#myModal">-->
+						<a data-toggle="modal" data-target="#architecture-button">
+							<img src="img/thumbnails/architecture.JPG" class = "img-responsive" alt="Click for more">
+						</a>
 						<br>
-						<strong>Where is the Architecture Button</strong><br>
-						<small>Connie Wang, Hanson Cheng, Ana Cristina Baquerizo</small>
+						<!--<img src="img/thumbnails/thumbarchitecture.JPG" class="img-responsive" style="min-height:300px;height:300px;" alt="Click for more"><br>-->
+	      				<!-- Modal -->
+	      				<div class="modal" id="architecture-button" tabindex="-1" role="dialog" aria-labelledby="architecture-button-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="architecture-button-label">Where Is the Architecture Button</h4>
+										<h5>Connie Wang, Hanson Cheng, and Ana Cristina Baquerizo</h5>-->
+		            				</div>
+		          					<div class="modal-body">
+		            					<div class="row"> 
+											<div class = "col-md-3">
+												<h5 class = "modal-title"><strong>Where Is the Architecture Button</strong></h5><br>
+												<p><small>Connie Wang B.ARCH '16 RISD, Hanson Cheng B.ARCH '16 RISD, and Ana Cristina Baquerizo B.ARCH '16 RISD</small></p>
+												<p><small>3D printed porcelain, high performance facades</small></p>
+												<p><small>Prototyped facade 2' x 4', 1/8 model 28" x 9" x 6"</small></p>
+											</div>
+											<div class = "col-md-9">
+												<p>This project is an integrated computational and digital fabrication prototype for a custom high performance ceramic facade system. In designing a high performance facade, one that is tailored to the lighting conditions based on programmatic needs of a space, the additive manufacturing process has allowed for a highly optimized design with greater flexibility, variety, and possibly efficiency in construction. The Grasshopper and DIVA plug-in for Rhinoceros work concurrently to generate and assess fabrication models in terms of daylight. The MIT Media Lab was chosen as a case study and experiment for the 3D printed optimized facade due to its variability in programmatic elements within one elevation of the building. This project aims to address the implications of the additive manufacturing process on an architectural scale.</p>
+												<p>The design of the facade via Grasshopper and the experimental phase of the printing developed concurrently. The extruder was reconfigured from an existing Ryobi caulking gun to efficiently extrude a special mix of porcelain and sand called CV90 made specifically in the RISD ceramics department. The most ideal mixture and consistency of the clay became a determinant in both the configuration of the extruder, as well as the design of individual components because of its structural properties and understanding the limit of the material.</p>
+												<img src="img/modal/architecture-button/clay.jpg">
+												<p class="description">Experimental clay and salt dough extrusions. Testing of material and geometry.</p>
+												<img src="img/modal/architecture-button/extruders.jpg">
+												<p class="description">Detail drawings of extruder iterations and circuit diagram.</p>
+												<img src="img/modal/architecture-button/final.jpg">
+												<p class = "description">Scaled final ceramic prototype. CV90 clay on lasercut steel frame.</p>
+												<img src="img/modal/architecture-button/work.JPG">
+												<p class = "description">Work space setup</p>
+												<img src="img/modal/architecture-button/printing.jpg">
+												<p class="description">Extruder in process of printing.</p>
+												<img src="img/modal/architecture-button/front.jpg">
+												<p class = "description">Front elevation of 1/8th Scaled model of the designed facade on MIT Media Lab.</p>
+												<img src="img/modal/architecture-button/angle.jpg">
+												<p class = "description">Close up of 3D printed facade on MIT Media Lab.</p>
+												<img src="img/modal/architecture-button/heatmaps.jpg">
+												<p class = "description">Day lighting analysis of grasshopper design output</p>
+											</div>
+										</div>
+		          					</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>Where Is the Architecture Button</strong><br>
+						<small>Connie Wang, Hanson Cheng, and Ana Cristina Baquerizo</small>
 					</div>
 					<div class = "post">
-						<img src="img/thumbnails/thumbbath.jpg"><br>
+						<a data-toggle="modal" data-target="#bathhouse">
+							<img src="img/thumbnails/bath.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="bathhouse" tabindex="-1" role="dialog" aria-labelledby="bathhouse-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<h4 class="modal-title" id="bathhouse-label">Bathhouse</h4>
+										<h5>Andres Chang</h5>
+		            				</div>
+		          					<div class="modal-body">
+		            					<p>Add content here</p>
+		          					</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
 						<br>
 						<strong>Bathhouse</strong><br>
 						<small>Andres Chang</small>
 					</div>
 					<div class = "post">
-						<img src="img/thumbnails/thumbbookwheel.jpg"><br>
+						<a data-toggle="modal" data-target="#bookwheel">
+							<img src="img/thumbnails/bookwheel.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="bookwheel" tabindex="-1" role="dialog" aria-labelledby="bookwheel-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<h4 class="modal-title" id="bookwheel-label">Bookwheel Social Center</h4>
+										<h5>Stan Lichens</h5>
+		            				</div>
+		          					<div class="modal-body">
+		            					<p>Add content here</p>
+		          					</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
 						<br>
 						<strong>Bookwheel Social Center</strong><br>
 						<small>Stan Lichens</small>
 					</div>
 					<div class = "post">
-						<img src="img/thumbnails/thumbbowl.jpg"><br>
+						<a data-toggle="modal" data-target="#rock-bowls">
+							<img src="img/thumbnails/bowl.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="rock-bowls" tabindex="-1" role="dialog" aria-labelledby="rock-bowls-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<h4 class="modal-title" id="rock-bowls-label">Rock Bowls</h4>
+										<h5>Eli Block</h5>
+		            				</div>
+		          					<div class="modal-body">
+		            					<p>Add content here</p>
+		          					</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
 						<br>
 						<strong>Rock Bowls</strong><br>
 						<small>Eli Block</small>
 					</div>
 					<div class = "post">
-						<img src="img/thumbnails/thumbcanto.JPG"><br>
+						<a data-toggle="modal" data-target="#canto">
+							<img src="img/thumbnails/canto.JPG" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="canto" tabindex="-1" role="dialog" aria-labelledby="canto-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<h4 class="modal-title" id="canto-label">Canto Glacier</h4>
+										<h5>Scarlett Xin Meng and Yanan Wu</h5>
+		            				</div>
+		          					<div class="modal-body">
+		            					<p>Add content here</p>
+		          					</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
 						<br>
 						<strong>Canto Glacier</strong><br>
-						<small>Scarlett Xin Meng, Yanan Wu</small>
+						<small>Scarlett Xin Meng and Yanan Wu</small>
 					</div>
 					<div class = "post">
-						<img src="img/thumbnails/thumbchair.JPG"><br>
+						<a data-toggle="modal" data-target="#dynamic-seating">
+							<img src="img/thumbnails/chair.JPG" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="dynamic-seating" tabindex="-1" role="dialog" aria-labelledby="dynamic-seating-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<h4 class="modal-title" id="dynamic-seating-label">Dynamic Seating</h4>
+										<h5>Benjamin Basseches</h5>
+		            				</div>
+		          					<div class="modal-body">
+		            					<p>Add content here</p>
+		          					</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
 						<br>
 						<strong>Dynamic Seating</strong><br>
 						<small>Benjamin Basseches</small>
 					</div>
 					<div class = "post">
-						<img src="img/thumbnails/thumbinternet.jpg"><br>
+						<a data-toggle="modal" data-target="#internet-sensations">
+							<img src="img/thumbnails/internet.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="internet-sensations" tabindex="-1" role="dialog" aria-labelledby="internet-sensations-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<h4 class="modal-title" id="internet-sensations-label">Internet Sensations Wand</h4>
+										<h5>Ijeoma Azodo and Horatio Han</h5>
+		            				</div>
+		          					<div class="modal-body">
+		            					<p>Add content here</p>
+		          					</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
 						<br>
 						<strong>Internet Sensations Wand</strong><br>
 						<small>Ijeoma Azodo and Horatio Han</small>
 					</div>
 					<div class = "post">
-						<img src="img/thumbnails/thumbphotographicrelief.jpg"><br>
+						<a data-toggle="modal" data-target="#photographic-relief">
+							<img src="img/thumbnails/photographicrelief.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="photographic-relief" tabindex="-1" role="dialog" aria-labelledby="photographic-relief-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<h4 class="modal-title" id="photographic-relief-label">Photographic Relief</h4>
+										<h5>Horatio Han</h5>
+		            				</div>
+		          					<div class="modal-body">
+		            					<p>Add content here</p>
+		          					</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
 						<br>
 						<strong>Photographic Relief</strong><br>
 						<small>Horatio Han</small>
 					</div>
 					<div class = "post">
-						<img src="img/thumbnails/thumbradicalis.jpg"><br>
+						<a data-toggle="modal" data-target="#radicalis">
+							<img src="img/thumbnails/radicalis.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="radicalis" tabindex="-1" role="dialog" aria-labelledby="radicalis-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<h4 class="modal-title" id="radicalis-label">Radicalis</h4>
+										<h5>Michael Yurgeles</h5>
+		            				</div>
+		          					<div class="modal-body">
+		            					<p>Add content here</p>
+		          					</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
 						<br>
 						<strong>Radicalis</strong><br>
 						<small>Michael Yurgeles</small>
 					</div>
 					<div class = "post">
-						<img src="img/thumbnails/thumbsimulation.jpg"><br>
+						<a data-toggle="modal" data-target="#simulation">
+							<img src="img/thumbnails/simulation.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="simulation" tabindex="-1" role="dialog" aria-labelledby="simulation-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<h4 class="modal-title" id="simulation-label">Simulation</h4>
+										<h5>Christopher Sancomb</h5>
+		            				</div>
+		          					<div class="modal-body">
+		            					<p>Add content here</p>
+		          					</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
 						<br>
 						<strong>Simulation</strong><br>
-						<small>Chris Sancomb</small>
+						<small>Christopher Sancomb</small>
 					</div>
 					<div class = "post">
-						<img src="img/thumbnails/thumbsteam.jpg"><br>
+						<a data-toggle="modal" data-target="#pavilion">
+							<img src="img/thumbnails/steam.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="pavilion" tabindex="-1" role="dialog" aria-labelledby="pavilion-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<h4 class="modal-title" id="pavilion-label">STEAM Pavilion</h4>
+										<h5>STEAM and Pneuhaus</h5>
+		            				</div>
+		          					<div class="modal-body">
+		            					<p>Add content here</p>
+		          					</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
 						<br>
 						<strong>STEAM Pavilion</strong><br>
 						<small>STEAM and Pneuhaus</small>
 					</div>
 					<div class = "post">
-						<img src="img/thumbnails/thumbwearable.jpg"><br>
+						<a data-toggle="modal" data-target="#wearable-guitar">
+							<img src="img/thumbnails/wearable.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="wearable-guitar" tabindex="-1" role="dialog" aria-labelledby="wearable-guitar-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<h4 class="modal-title" id="wearable-guitar-label">Wearable Toy Guitar</h4>
+										<h5>Lily Fan</h5>
+		            				</div>
+		          					<div class="modal-body">
+		            					<p>Add content here</p>
+		          					</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
 						<br>
 						<strong>Wearable Toy Guitar</strong><br>
 						<small>Lily Fan</small>
@@ -171,9 +424,11 @@
 		  				Sciences Library, 3rd Floor<br>
 		  				<a href="https://www.google.com/maps/place/Sciences+Library/@41.8269586,-71.4001563,17z/data=!3m1!4b1!4m2!3m1!1s0x89e4453b55d4f985:0xc4db82abe2ad6d17" target="_blank">201 Thayer Street</a><br>
 		  				Providence, <abbr title="Rhode Island">RI</abbr> 02912<br>
-		  				<abbr title="Phone">P:</abbr> (401) 863-6890
+		  				<abbr title="Phone">P:</abbr> (401) 863-6890 <br>
+		  				<abbr title="Email">E:</abbr> <a href="mailto:brownsciencecenter@gmail.com">brownsciencecenter@gmail.com</a>
 					</address>
-					<p>Located on the third floor of the <a href="http://library.brown.edu/about/scili/" target="_blank">Sciences Library</a>, the Science Center follows Sciences Library hours of operation. To view upcoming schedules and changes, please click <a href="http://library.brown.edu/hours/index.php?cur_library=hours_sci" target="_blank">here.</a></p> <br/>
+					<p>Located on the third floor of the <a href="http://library.brown.edu/about/scili/" target="_blank">Sciences Library</a>, the Science Center follows Sciences Library hours of operation. To view upcoming schedules and changes, please click <a href="http://library.brown.edu/hours/index.php?cur_library=hours_sci" target="_blank">here.</a></p>
+					<br>
 					<h4>Hours</h4>
 					<ul class="list-unstyled">
 						<li>Monday-Thursday: 8:30 am-2:00 am</li>
@@ -185,15 +440,13 @@
 				</div> <!--end left column-->
 				<div class = "col-md-4">
 					<h4>About the Science Center</h4>
-					<p>Brown's <a href="http://www.brown.edu/academics/science-center/" target="_blank">Science Center</a> is a state-of-the-art facility that supports teaching and learning in the sciences. The Center houses academic mentoring and support programs and serves as the campus clearinghouse for information about research and fellowship opportunities at Brown and around the world. As a study, collaborative, and exhibit space, bringing together faculty and students from across the science disciplines, the Science Center promotes curricular innovation, helps students achieve their academic goals, and fosters a community of science at Brown.</p>
-					<br/>
-					<p>Get in touch at <a href="mailto:brownsciencecenter@gmail.com">brownsciencecenter@gmail.com</a></p>
+					<p>Brown University's <a href="http://www.brown.edu/academics/science-center/" target="_blank">Science Center</a> is a state-of-the-art facility that supports teaching and learning in the sciences. The Center houses academic mentoring and support programs and serves as the campus clearinghouse for information about research and fellowship opportunities at Brown and around the world. As a study, collaborative, and exhibit space, the Center brings together faculty and students from across the science disciplines. The Science Center promotes curricular innovation, helps students achieve their academic goals, and fosters a community of science at Brown.</p>
+					<br>
 					<ul class = "list-unstyled">
-						<li>(add social icons here)</li>
-						<li><a href="http://www.brown.edu/academics/science-center/" target="_blank">Website</a></li>
-						<li><a href= "https://www.facebook.com/BrownScienceCenter" target="_blank">Facebook</a></li>
-						<li><a href="https://twitter.com/BrownSciCenter" target="_blank">Twitter</a></li>
-						<li><a href="https://instagram.com/brownscicenter/" target="_blank">Instagram</a></li>
+						<li><i class="fa fa-home"></i> <a href="http://www.brown.edu/academics/science-center/" target="_blank">Website</a></li>
+						<li><i class="fa fa-facebook"></i> <a href= "https://www.facebook.com/BrownScienceCenter" target="_blank">Facebook</a></li>
+						<li><i class="fa fa-twitter"></i> <a href="https://twitter.com/BrownSciCenter" target="_blank">Twitter</a></li>
+						<li><i class="fa fa-instagram"></i> <a href="https://instagram.com/brownscicenter/" target="_blank">Instagram</a></li>
 					</ul>
 				</div><!--end right column -->
 				<div class = "col-md-2">
@@ -218,14 +471,18 @@
 			<div class ="row">
 				<div class="col-md-2">
 				</div>
-				<div class = "col-md-5">
+				<div class = "col-md-4">
 					<div class ="bios">
 						<h4>Exhibit Staff</h4>
+						<!--
+						<p>Kenji Endo - Digital Curator <br><small>Test </small></p>
+						<p>Teri Minogue - Exhibit Curator <br><small>Test </small></p>
+						<p>Adele Ruppert - Exhibit Curator <br><small></small></p>
+						-->
 						<ul class ="list-unstyled">
-							<li>(bios and images?, emails, responsibilities, site, pamphlet, etc)</li>
-							<li>Kenji Endo</li>
-							<li>Teri Minogue</li>
-							<li>Adele Ruppert</li>
+							<li><a href="mailto:colvin_endo@brown.edu">Kenji Endo</a> - Digital Curator</li>
+							<li><a href="mailto:teri_minogue@brown.edu">Teri Minogue</a> - Exhibit Curator</li>
+							<li><a href="mailto:adele_ruppert@brown.edu">Adele Ruppert</a> - Exhibit Curator</li>
 						</ul>
 					</div>
 					<div class = "thanks">
@@ -237,48 +494,37 @@
 						</ul>
 					</div>
 				</div>
-				<div class = "col-md-1">
-				</div>
-				<div class = "col-md-2">
+				<div class = "col-md-4">
 					<aside>
-						<p>Site made in 2015 with Orator Std, Draftsman, built with Bootstrap, Hypertext Markup Language, Cascading Style Sheets, and JQuery (?). Created by <a href ="ckendo.weebly.com" target="_blank">Kenji Endo</a>.</p>
+						<p>Site made in 2015 with Orator Std, Draftsman, Font Awesome icons, built with Bootstrap, Masonry, Hypertext Markup Language, Cascading Style Sheets, and JQuery. Created by <a href ="http://ckendo.weebly.com" target="_blank">Kenji Endo</a>.</p>
+						<p>Squiggle adapted from Damien Newman's <a href="http://cargocollective.com/central/The-Design-Squiggle" target="_blank">"The Design Squiggle"</a></p>
 						<p>Say hello at <a href="mailto:brownsciencecenter@gmail.com">brownsciencecenter@gmail.com</a></p>
 					</aside>
 				</div>
 				<div class="col-md-2">
 				</div>
 			</div> <!--end row -->
+			<div class="row" style="margin-top:40px;"> <!--image -->
+				<div class = "col-md-2">
+				</div>
+				<div class = "col-md-8">
+					<img src = "img/squiggle.png" style="width:100%;">
+				</div>
+				<div class = "col-md-2">
+				</div>
+			</div>
 		</section>
 	</div> <!--end team container -->
 	<div class = "container">
 		<div class = "row spacer">
 			<div class="col-lg-12"></div>
 		</div>
+		<div class = "row spacer">
+				<div class="col-lg-12"></div>
+		</div>
 		<footer class ="text-center">
 			<p><small>&copy; Brown University Science Center 2015. Images courtesy of the artists.</small></p>
 		</footer>
 	</div> <!-- end footer container -->
-	<!--
-	<section class="splash" id="cover">
-		<div class="centered">
-			<div class="title">
-				<h3>THE</h3>
-				<h1>PROTOTYPE</h1>
-			</div>
-		</div>
-	</section>
-	<section class="info">
-		<div class="about">
-			<h2> About The Prototype </h2>
-			<p>The Science Center presents an exhibit on the design process, titled "The Prototype".</p>
-			<p>From the Apple iPad, to spinning chairs, to city plazas, and to the cars we drive, the products, structures, and spaces we use in our day-to-day lives are the results of collaborative brainstorming, revisions, and many dead ends. These products of design each begin with a prototype - sketches recorded on coffee shop napkins, cardboard mockups, and blueprints.</p>
-			<p>"The Prototype" focuses on the design process of the products, spaces, objects, and technology we use in our everyday lives - structures that must be realized with consideration of the three principles of design: beauty, sustainability, and utility. From areas such as engineering, industrial design, architecture, urban studies, computer science, and visual art, this exhibit showcases parts of the design process that are not usually seen by the user, focusing on the inspiration, brainstorming, collaborations, revisions, and dead ends that happen before a product, structure, or space is ever realized. This exhibit showcases the sketches, mathematics, physics, physical prototyping, 3D printing, and digital rendering and simulations, through programs such as Maya, Rhino, SketchUp, and AutoCAD, that make up this process. </p>
-
-			<p> USE MASONRY FOR DYNAMIC LAYOUT. COULD USE PHP DATABASE BUT MAYBE NOT NEEDED. SEE CAROLINE BADGELY's GD EXHIBIT FOR RISD MUSEUM + RISD GRAD EXHIBIT FOR INSPIRATION. MAYBE USE BOOTSTRAP TOO. CAN PROBABLY JUST DO IN HTML/CSS/JQUERY! LOADING effects for scroll down to populate. Maybe loading % counter for initial load??</p>
-
-			<p> ABOUT EXHIBITS AT SCIENCE CENTER. LIST OF PAST EXHIBITS + PAST CURATORS</p>
-		</div>
-	</section>
-	-->
 </body>
 </html>
