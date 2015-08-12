@@ -66,6 +66,15 @@ div.modal-content{
 
 }
 
+/* Important part */
+.modal-dialog{
+    overflow-y: initial;
+}
+.modal-body {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
 /* Small devices, Medium, and Large Devices*/
 
 
@@ -123,7 +132,7 @@ h5{
 }
 
 .description{
-	font-size: 90%;
+	font-size: 85%;
 	margin-top: 8px;
 	margin-bottom: 20px;
 }
