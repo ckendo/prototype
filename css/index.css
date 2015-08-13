@@ -145,7 +145,7 @@ h5{
 }
 
 a:hover {
-	color: #000;
+	color: #E1E5E9;
 }
 
 a {
@@ -185,6 +185,114 @@ a {
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
+}
+
+#showLeftPush{
+	position: fixed; 
+	left:20px;
+	top:15px;
+	/*color: #336699;*/
+	color:black;
+	z-index: 1010;
+}
+
+/*
+#mini{
+	color:#336699;
+	position: fixed;
+	left:20px;
+	top:10px;
+	z-index:1010;
+}
+
+#mini h6{
+	margin-left:3px;
+	margin-bottom:-15px;
+	font-size: 18px;
+}
+
+#mini h3{
+	font-size: 40px;
+	margin-bottom:0px;
+}
+*/
+.btn:focus, .btn:active:focus, .btn.active:focus{
+    outline:0;
+    box-shadow:none;
+}
+
+#showLeftPush:hover{
+	color:#E1E5E9;
+}
+
+/*Push menu*/
+/* General styles for all menus */
+
+/*Menu body*/
+.cbp-spmenu {
+	background: #A6B1BC;
+	position: fixed;
+}
+
+/*Top of menu*/
+.cbp-spmenu h3 {
+	color: #000000;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #A6B1BC;
+	height:50px;
+}
+
+/*Menu text*/
+.cbp-spmenu a {
+	display: block;
+	color: #000000;
+	/*font-size: 1.1em;*/
+	font-size: 1.3em;
+	font-weight: 300;
+	margin-left: 10px;
+}
+
+/*Hover blocks*/
+.cbp-spmenu a:hover {
+	background: #A6B1BC;
+	color: #E1E5E9;
+	text-decoration: none;
+}
+
+.cbp-spmenu a:link{
+	text-decoration:none;
+}
+
+/*click*/
+.cbp-spmenu a:active {
+	background: #A6B1BC;
+	color: #E1E5E9;
+	text-decoration:none;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: none;
+	padding: none;
+}
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
 }
 
 /* Masonry for Bootstrap. Modified from justincarroll https://gist.github.com/justincarroll/5959773 

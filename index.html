@@ -1,9 +1,7 @@
 <!DOCTYPE html><!--HTML5 doctype-->
 <html lang="en-US"> <!--lang attribute-->
 <head>
-	
 	<title>The Prototype</title>
-
 	<meta charset = "utf-8"> <!--character set-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -11,6 +9,9 @@
 
 	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!--for push menu-->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
 
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 
@@ -27,29 +28,45 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   	<!--<script src="js/bootstrap.min.js"></script>-->
+
 	<!-- Include Masonry -->
-	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
 	<!--<script src="js/masonry.pkgd.min.js"></script>-->
 
 	<script src="js/script.js"></script>
 
+	<!--for push menu-->
+	<script src="js/modernizr.custom.js"></script>
+
+
 	<!--Delete this -->
 	<!--<script src="js/modal.js"></script>-->
 </head>
-<body>
-	<div class="jumbotron splash">
+<body class = "cbp-spmenu-push">
+	<section class="buttonset">
+		<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+		<button id="showLeftPush" type="button" class="btn btn-link" style="background:transparent"><i class="fa fa-bars fa-2x"></i></button>
+		<!--<div class = "hidden-sm hidden-md" id = "mini">
+			<h6>THE</h6>
+			<h3>PROTOTYPE</h3>
+		</div>-->
+	</section>
+	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3></h3>
+			<a href="#intro">INTRO</a>
+			<a href="#gallery">GALLERY</a>
+			<a href="#visit">VISIT</a>
+			<a href="#team">TEAM</a>
+	</nav>
+	<div class="jumbotron splash" id = "home">
 		<header>
 			<div class = "centered">
 				<h3>THE</h3>
 				<h1>PROTOTYPE</h1>
 			</div>
 		</header>
-	</div>	
-
-	<!-- <div id="grid" class="container"> -->
-
-	<div class = "container">
+	</div>
+	<div class = "container" id = "intro">
 		<section id ="intro">
 			<div class = "row spacer hidden-xs hidden-sm">
 				<div class="col-lg-12"></div>
@@ -69,7 +86,7 @@
 			</div>
 		</section>
 	</div> <!--end intro container -->
-	<div class = "container">
+	<div class = "container" id="gallery">
 		<section id = "gallery">
 			<div class = "row spacer hidden-xs hidden-sm">
 				<div class="col-lg-12"></div>
@@ -902,12 +919,12 @@
 				</div>
 			</div>
 		</section>
-	</div> <!--end gallery container -->
-	<div class = "container">
-		<section id = "visit">
-			<div class = "row spacer hidden-xs hidden-sm">
+		<div class = "row spacer hidden-xs hidden-sm">
 				<div class="col-lg-12"></div>
-			</div>
+		</div>
+	</div> <!--end gallery container -->
+	<div class = "container" id = "visit">
+		<section id = "visit">
 			<div class="row"> <!--page header -->
 				<div class = "col-md-2">
 				</div>
@@ -958,7 +975,7 @@
 			</div> <!--end row div -->
 		</section>
 	</div> <!-- end visit container -->
-	<div class = "container">
+	<div class = "container" id = "team">
 		<section id = "team">
 			<div class = "row spacer hidden-xs hidden-sm">
 				<div class="col-lg-12"></div>
@@ -1030,5 +1047,64 @@
 			<p><small>&copy; Brown University Science Center 2015. Images courtesy of the artists.</small></p>
 		</footer>
 	</div> <!-- end footer container -->
+	<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+	<script src="js/classie.js"></script>
+	<script>
+		var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+			menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+			menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+			menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+			showLeft = document.getElementById( 'showLeft' ),
+			showRight = document.getElementById( 'showRight' ),
+			showTop = document.getElementById( 'showTop' ),
+			showBottom = document.getElementById( 'showBottom' ),
+			showLeftPush = document.getElementById( 'showLeftPush' ),
+			showRightPush = document.getElementById( 'showRightPush' ),
+			body = document.body;
+
+		/*
+		showLeft.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		};
+		showRight.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuRight, 'cbp-spmenu-open' );
+		};
+		showTop.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuTop, 'cbp-spmenu-open' );
+		};
+		showBottom.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuBottom, 'cbp-spmenu-open' );
+		};
+		*/
+		showLeftPush.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( body, 'cbp-spmenu-push-toright' );
+			classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		};
+		/*
+		showRightPush.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( body, 'cbp-spmenu-push-toleft' );
+			classie.toggle( menuRight, 'cbp-spmenu-open' );
+		};*/
+	</script>
+	<script>
+		/*$(document).on('click', function(event) {
+			if (!$(event.target).closest('#menucontainer').length) {
+			// Hide the menus.
+			}
+		});*/
+			$('html').click(function() {
+			//Hide the menus if visible
+			});
+
+			$('#menucontainer').click(function(event){
+			    event.stopPropagation();
+			});
+	</script>
 </body>
 </html>
