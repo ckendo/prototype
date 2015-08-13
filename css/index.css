@@ -187,6 +187,16 @@ a {
 	transform: translate(-50%, -50%);
 }
 
+.abs-center {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	width: 50%;
+	height: 50%;
+	margin-right: 32%;
+	vertical-align: middle;
+}
+
 #showLeftPush{
 	position: fixed; 
 	left:20px;
@@ -225,7 +235,7 @@ a {
 	color:#E1E5E9;
 }
 
-/*Push menu*/
+/*Push menu via http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/*/
 /* General styles for all menus */
 
 /*Menu body*/
