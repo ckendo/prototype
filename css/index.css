@@ -101,12 +101,18 @@ body {
 	font-size: 15px;
 }
 
+/*
 @font-face{
 	font-family: Orator Std;
-	src: url(/fonts/OratorStd.otf);
-	font-family: Draftsman;
-	src: url(/fonts/Draftsman.ttf);
+	src: url(/fonts/Orator Std Medium/Orator Std Medium.ttf);
 	font-family: 'Reenie Beanie', cursive;
+}
+*/
+
+@font-face {
+  font-family: 'Orator STD';
+  src: local('☺︎'),
+         url('/fonts/Orator STD Medium/Orator STD Medium.ttf') format('truetype');
 }
 
 .splash h1{
@@ -185,6 +191,7 @@ a {
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
 }
 
 .abs-center {
