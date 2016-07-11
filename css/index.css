@@ -1,15 +1,64 @@
 /*need full div for all cover pages. Only use section to divide up into logical text parts not for*/
 
 /*override Bootstrap jumbotron for full screen landing page*/
-html, body, .fullpage {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+html, body{
+	height:100%;
+	margin: 0px;
+}
+
+/*test remove */
+/*
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px;
+  }
+}
+*/
+
+/*Full screen splash page*/
+.jumbotron{
+	height:100%;
+}
+
+.splash{
+	background-color:#336699;
 }
 
 /*Change to hand on hover */
 /*li { cursor: pointer; cursor: hand; }*/
+
+/*Modal windows*/
+.img-responsive{
+	cursor: pointer;
+	-webkit-background-clip: none;
+	-webkit-box-shadow: none;
+}
+
+.modal-header{
+	border-bottom: none;
+}
+
+div.modal-content{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.post .img-responsive{
+	margin-bottom: -20px;
+}
+
+.modal-backdrop {
+   background-color: white;
+}
+
+.modal-backdrop.in{
+	opacity: 1;
+}
 
 .static{
 	top: 0;
@@ -17,149 +66,135 @@ html, body, .fullpage {
 
 }
 
+/* Important part */
+.modal-dialog{
+    overflow-y: initial;
+}
+.modal-body {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
 /* Small devices, Medium, and Large Devices*/
-/*.fullscreen{
+
+
+@media (min-width: 768px) {
+	.modal .modal-dialog { width: 768px; }
+}
+
+
+.fullscreen{
 	height:100%;
 	min-height:100%;
 	overflow-y: hidden;
-}*/
-
-.fullpage{
-	/*border-top-style: solid;
-	border-bottom-style: solid;
-    border-width: 1px;
-    border-color: #F5822C;*/
-    overflow:hidden;
-    padding: 50px;
 }
 
-.extra-large-spacer{
-	margin-top:12vw;
-}
-
-.large-spacer {
-    margin-top: 8vw;
-}
-
-.medium-spacer {
-    margin-top: 4vw;
-}
-
-.small-spacer{
-	margin-top:2.8vw;
+.spacer {
+    margin-top: 40px;
 }
 
 /*reset page font size to allow easy translation (0.8em = 8px) 62.5% */
 body {
-	/*background-size:cover;*/
-	/*background-color: #FFFFFF;*/
-	/*font-family: Orator Std;*/
-	/*font-size: 15px;*/
+	background-size:cover;
+	background-color: #FFFFFF;
+	font-family: Orator Std;
+	font-size: 15px;
 }
+
+/*
+@font-face{
+	font-family: Orator Std;
+	src: url(/fonts/Orator Std Medium/Orator Std Medium.ttf);
+	font-family: 'Reenie Beanie', cursive;
+}
+*/
 
 @font-face {
-  font-family: 'NHaasGrotesk';
+  font-family: 'Orator STD';
   src: local('☺︎'),
-         url('../fonts/NHaasGroteskDSPro-65Md.ttf') format('truetype');
+         url('/fonts/Orator STD Medium/Orator STD Medium.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'SuperiorTitle';
-  src: local('☺︎'),
-         url('../fonts/SuperiorTitleLight.otf') format('embedded-opentype');
+.splash h1{
+	font-size: 12vw;
+	margin:0vw;
+	color: #FFFFFF;
 }
 
-.navbar{
-	background:none;
-	border-style:none;
-	padding:0;
+/*change this from vw later */
+h2{
+	font-family: Reenie Beanie;
+	font-size: 300%;
 }
 
-nav{
-	font-family: 'NHaasGrotesk';
-	font-size: 160%;
-	color: #000000;
-	text-align: right;
-	margin: 10px;
+/*change this later */
+h4{
+	font-size: 150%;
+	font-weight: 400;
 }
 
-nav a{
-	margin-left: 10px;
-	margin-right:10px;
+h5{
+	font-size: 120%;
 }
 
-#mobile-nav{
-	font-size:75%;
-	text-align: center;
-	margin: 0;
-	padding: 0;
+.description{
+	font-size: 85%;
+	margin-top: 8px;
+	margin-bottom: 20px;
 }
+.splash h3{
+	font-size: 3vw;
+	margin: 0vw;
+	margin-left: 1vw;
+	color: #FFFFFF;
 
+}
 
 a:hover {
-	color: #F5822C;
+	color: #E1E5E9;
 }
 
 a {
-	color: #000000;
+	color: #336699;
 }
 
-.container{
-	height; 100%;
-	}
-
-#full{
+/*
+.jumbotron{
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
+  	background-color:#336699;
+}
+*/
+/*
+.fullscreen{
+	height:100%;
 	min-height:100%;
 }
+*/
 
-#desktop h1{
-	font-family: 'NHaasGrotesk';
-	font-size: 26px;
-	color: #000000;
-	text-align: right;
-	margin:7px;
-}
-
-#mobile h1{
-	font-family: 'NHaasGrotesk';
-	font-size: 16px;
-	color: #000000;
-	text-align: right;
-	margin:7px;
-}
-
-h2{
-	font-family: 'NHaasGrotesk';
-	font-size: 30px;
-	color: #000000;
-	text-align: left;
-}
-
-p{
-	font-family: 'SuperiorTitle';
-	font-size:20px;
-	color: #000000;
-	text-align: left;
-	line-height: 120%;
-	margin-bottom:25px;
-}
-
-#icon{
-	height:55px;
-	margin:5px;
-}
+/*center div horizontally-vertically to screen size*/
+/*.absolute-center{
+	min-height: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+} */
 
 /*display div horizontally-vertically centered to screen size */
-/*.centered{
+.centered{
 	position: absolute;
 	top:50%;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
-}*/
+}
 
-/*.abs-center {
+.abs-center {
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
@@ -167,17 +202,186 @@ p{
 	height: 50%;
 	margin-right: 32%;
 	vertical-align: middle;
-}*/
+}
 
-/*#showLeftPush{
+#showLeftPush{
 	position: fixed; 
 	left:20px;
 	top:15px;
+	/*color: #336699;*/
 	color:black;
 	z-index: 1010;
-}*/
+}
 
-/*.btn:focus, .btn:active:focus, .btn.active:focus{
+/*
+#mini{
+	color:#336699;
+	position: fixed;
+	left:20px;
+	top:10px;
+	z-index:1010;
+}
+
+#mini h6{
+	margin-left:3px;
+	margin-bottom:-15px;
+	font-size: 18px;
+}
+
+#mini h3{
+	font-size: 40px;
+	margin-bottom:0px;
+}
+*/
+.btn:focus, .btn:active:focus, .btn.active:focus{
     outline:0;
     box-shadow:none;
 }
+
+#showLeftPush:hover{
+	color:#E1E5E9;
+}
+
+/*Push menu via http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/*/
+/* General styles for all menus */
+
+/*Menu body*/
+.cbp-spmenu {
+	background: #A6B1BC;
+	position: fixed;
+}
+
+/*Top of menu*/
+.cbp-spmenu h3 {
+	color: #000000;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #A6B1BC;
+	height:60px;
+}
+
+/*Menu text*/
+.cbp-spmenu a {
+	display: block;
+	color: #000000;
+	/*font-size: 1.1em;*/
+	font-size: 1.3em;
+	font-weight: 300;
+	margin-left: 10px;
+}
+
+/*Hover blocks*/
+.cbp-spmenu a:hover {
+	background: #A6B1BC;
+	color: #E1E5E9;
+	text-decoration: none;
+}
+
+.cbp-spmenu a:link{
+	text-decoration:none;
+}
+
+/*click*/
+.cbp-spmenu a:active {
+	background: #A6B1BC;
+	color: #E1E5E9;
+	text-decoration:none;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: none;
+	padding: none;
+}
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+/* Masonry for Bootstrap. Modified from justincarroll https://gist.github.com/justincarroll/5959773 
+*
+*/
+
+/* Grid */
+
+
+#posts { 
+	margin: 30px auto 0; 
+}
+
+.post {
+	margin: 0 0 50px;
+	text-align: center;
+	width: 100%;
+}
+
+.post img { 
+	padding: 0 15px; 
+	width: 100%; 
+}
+
+#grid.container .post img { padding: 0; }
+
+
+/* Small devices */
+
+@media (min-width: 768px) {
+	#grid > #posts .post { width: 335px; }
+	#grid > #posts .post.cs2 { width: 100%; }
+	.post img { padding: 0; }
+}
+
+/* Medium and Large devices */
+
+@media (min-width: 992px) {
+	#grid > #posts .post { width: 445px; }
+	#grid > #posts .post.cs2 { width: 100%; }
+}
+
+
+/* Large devices */
+
+/*
+@media (min-width: 1200px) {
+	#grid > #posts .post { width: 346px; }
+	#grid > #posts .post.cs2 { width: 742px; }
+}
+*/
+
+/* Large devices min-width (1200px) + a .post margin (50px) * 2 (100px) = 1300px */
+/* 1300px gives me the clearance I need to keep the margins of the entire #grid (the
+bleed if you will) the same width as the .post margins posts (50px). Basically I'm
+being really picky about whitespace. If you don't care, no problem, just delete this.
+Can this be done with Masonry options? */
+
+/*
+@media (min-width: 1300px) {
+	#grid {
+		left: -50px;
+		padding-left: 50px;
+		padding-right: 50px;
+		position: relative;
+    	}
+	#grid.container {
+		left: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+*/
+
+/*End Masonry */

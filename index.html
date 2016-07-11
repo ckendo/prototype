@@ -1,7 +1,7 @@
 <!DOCTYPE html><!--HTML5 doctype-->
 <html lang="en-US"> <!--lang attribute-->
 <head>
-	<title>Citizen + Virtual</title>
+	<title>The Prototype</title>
 	<meta charset = "utf-8"> <!--character set-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -20,126 +20,1022 @@
 	<!--Font Awesome social glyphicons -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
-	</head>
-
-	<nav class="navbar navbar-default navbar-fixed-top desktop">
-  		<div class="container hidden-xs" id="desktop-nav">
-  			<a href="#home">Home</a>
-			<a href="#about">About</a>
-			<a href="#events">Events</a>
-			<a href="#contact">Contact</a>
- 		</div>
- 		<div class="container hidden-sm hidden-md hidden-lg hidden-xl" id="mobile-nav">
-  			<a href="#home">Home</a>
-			<a href="#about">About</a>
-			<a href="#events">Events</a>
-			<a href="#contact">Contact</a>
- 		</div>
+</head>
+<body class = "cbp-spmenu-push">
+	<section class="buttonset">
+		<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+		<button id="showLeftPush" type="button" class="btn btn-link" style="background:transparent"><i class="fa fa-bars fa-2x"></i></button>
+		<!--<div class = "hidden-sm hidden-md" id = "mini">
+			<h6>THE</h6>
+			<h3>PROTOTYPE</h3>
+		</div>-->
+	</section>
+	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3></h3>
+			<a href="#intro">INTRO</a>
+			<a href="#gallery">GALLERY</a>
+			<a href="#visit">VISIT</a>
+			<a href="#team">TEAM</a>
 	</nav>
-
-	<div class = "fullpage container" id = "home">
-		<section id ="home">
-			<div class = "row medium-spacer hidden-xs hidden-sm">
-				<div class="col-lg-12"></div>
+	<div class="jumbotron splash" id = "home">
+		<header>
+			<div class = "centered">
+				<h3>THE</h3>
+				<h1>PROTOTYPE</h1>
 			</div>
-			<div class = "row small-spacer">
+		</header>
+	</div>
+	<div class = "container" id = "intro">
+		<section id ="intro">
+			<div class = "row spacer hidden-xs hidden-sm">
 				<div class="col-lg-12"></div>
 			</div>
 			<div class = "row">
-				<div class = "col-xs-12 col-sm-9 col-md-7">
-					<img src = "img/C+VLOGO.png" style="width:100%;">
-					<div class = "hidden-xs hidden-sm" id="desktop">
-						<h1>The Third Installment of the RISD, Brown, + MIT</h1>
-						<h1>Wintersession &amp; IAP Workshop Series</h1>
-					</div>
-					<div class = "hidden-md hidden-lg hidden-xl" id="mobile">
-						<h1>The Third Installment of the RISD, Brown, + MIT</h1>
-						<h1>Wintersession &amp; IAP Workshop Series</h1>
-					</div>
+				<div class = "col-sm-1 col-md-2">
 				</div>
-				<div class = "col-sm-3 col-md-5">
+				<div class = "col-xs-12 col-sm-10 col-md-8">
+					<h2>Welcome to The Prototype</h2>
+					<br>
+					<!--Longer, orig blurb-->
+					<p>The Science Center presents an exhibit on the design process, titled "The Prototype".</p>
+					<p>From the Apple iPad, to spinning chairs, to city plazas, and to the cars we drive, the products, structures, and spaces we use in our day-to-day lives are the results of collaborative brainstorming, revisions, and many dead ends. These products of design each begin with a prototype - sketches recorded on coffee shop napkins, cardboard mockups, and blueprints.</p>
+					<p>"The Prototype" focuses on the design process of the products, spaces, objects, and technology we use in our everyday lives - structures that must be realized with consideration of the three principles of design: beauty, sustainability, and utility. From areas such as engineering, industrial design, architecture, urban studies, computer science, and visual art, this exhibit showcases parts of the design process that are not usually seen by the user, focusing on the inspiration, brainstorming, collaborations, revisions, and dead ends that happen before a product, structure, or space is ever realized. This exhibit showcases the sketches, mathematics, physics, physical prototyping, 3D printing, and digital rendering and simulations, through programs such as Maya, Rhino, SketchUp, and AutoCAD, that make up this process. </p>
+					<!--Entrance poster blurb
+					<p>From the Apple iPad to spinning chairs to city plazas and to the cars we drive, the products, structures, and spaces we use in our day-to-day lives are the results of collaborative brainstorming, revisions, and many dead ends. These products of design each begin with a prototype - sketches recorded on coffee shop napkins, cardboard mockups, and blueprints.</p>
+					<p>In this exhibit, the Science Center seeks to showcase the design process of Brown and RISD students, faculty, and alumni, getting a look at the brainstorming, collaborations, experiments, and revisions that happen before a product, tool, space, or work of art is ever realized.</p>   
+					<p>From engineering to architecture to industrial design to sculpture and to literary arts, the artists and designers displayed give us a glimpse into the process of planning and creating.</p>-->
 				</div>
-			</div>
-			<div class = "row large-spacer hidden-xs hidden-sm">
-				<div class="col-lg-12"></div>
-			</div>
-			<div class = "row small-spacer hidden-md hidden-lg hidden-xl">
-				<div class="col-lg-12"></div>
+				<div class = "col-sm-1 col-md-2">
+				</div>
 			</div>
 		</section>
-	</div> <!--end splash container -->
-	<div class = "fullpage container" id = "about">
-		<section id = "about">
+	</div> <!--end intro container -->
+	<div class = "container" id="gallery">
+		<section id = "gallery">
+			<div class = "row spacer hidden-xs hidden-sm">
+				<div class="col-lg-12"></div>
+			</div>
+			<div id="grid">
+				<div id="posts">
+					<div class = "post">
+						<!-- Image trigger modal -->
+						<!--<img src="img/thumbnails/thumbarchitecture.JPG" class="img-responsive" alt="Click for more"><br>
+						<a data-toggle="modal" data-target="#myModal">-->
+						<a data-toggle="modal" data-target="#architecture-button">
+							<img src="img/thumbnails/architecture.JPG" class = "img-responsive" alt="Click for more">
+						</a>
+						<br>
+						<!--<img src="img/thumbnails/thumbarchitecture.JPG" class="img-responsive" style="min-height:300px;height:300px;" alt="Click for more"><br>-->
+	      				<!-- Modal -->
+	      				<div class="modal" id="architecture-button" tabindex="-1" role="dialog" aria-labelledby="architecture-button-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		            				<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="architecture-button-label">Where Is the Architecture Button</h4>
+										<h5>Connie Wang, Hanson Cheng, and Ana Cristina Baquerizo</h5>-->
+		            				</div>
+		            				<div class = "row">
+		            					<div class = "col-md-3">
+											<div class = "hidden-xs hidden-sm"> <!--only show static sidebar for large and medium displays -->
+												<h5 class = "modal-title" id = "architecture-button-label"><strong>Where Is the Architecture Button</strong></h5><br>
+												<p><small><a href="http://portfolios.risd.edu/conniewang" target="_blank">Connie Wang</a> RISD '16 B.ARCH, <a href="http://portfolios.risd.edu/hansoncheng" target="_blank">Hanson Cheng</a> RISD '16 B.ARCH, and Ana Cristina Baquerizo RISD '16 B.ARCH</small></p>
+												<p><small>3D printed porcelain, high performance facades</small></p>
+												<p><small>Prototyped facade 2' x 4', 1/8 model 28" x 9" x 6"</small></p>
+											</div>
+		            					</div>
+		            					<div class = "col-md-9">
+		            						<div class = "modal-body">
+		            							<div class = "hidden-md hidden-lg"> <!--just show content for small and xs displays-->
+													<h5 class = "modal-title" id = "architecture-button-label"><strong>Where Is the Architecture Button</strong></h5><br>
+													<p><small><a href="http://portfolios.risd.edu/conniewang" target="_blank">Connie Wang</a> RISD '16 B.ARCH, <a href="http://portfolios.risd.edu/hansoncheng" target="_blank">Hanson Cheng</a> RISD '16 B.ARCH, and Ana Cristina Baquerizo RISD '16 B.ARCH</small></p>
+													<p><small>3D printed porcelain, high performance facades</small></p>
+													<p><small>Prototyped facade 2' x 4', 1/8 model 28" x 9" x 6"</small></p>
+													<br>
+												</div>
+		            							<p>This project is an integrated computational and digital fabrication prototype for a custom high performance ceramic facade system. In designing a high performance facade, one that is tailored to the lighting conditions based on programmatic needs of a space, the additive manufacturing process has allowed for a highly optimized design with greater flexibility, variety, and possibly efficiency in construction. The Grasshopper and DIVA plug-in for Rhinoceros work concurrently to generate and assess fabrication models in terms of daylight. The MIT Media Lab was chosen as a case study and experiment for the 3D printed optimized facade due to its variability in programmatic elements within one elevation of the building. This project aims to address the implications of the additive manufacturing process on an architectural scale.</p>
+												<img src="img/modal/architecture-button/clay.jpg">
+												<p class="description">Experimental clay and salt dough extrusions. Testing of material and geometry.</p>
+												<img src="img/modal/architecture-button/extruders.jpg">
+												<p class="description">Detail drawings of extruder iterations and circuit diagram.</p>
+												<img src="img/modal/architecture-button/final.jpg">
+												<p class = "description">Scaled final ceramic prototype. CV90 clay on lasercut steel frame.</p>
+
+												<p>The design of the facade via Grasshopper and the experimental phase of the printing developed concurrently. The extruder was reconfigured from an existing Ryobi caulking gun to efficiently extrude a special mix of porcelain and sand called CV90 made specifically in the RISD ceramics department. The most ideal mixture and consistency of the clay became a determinant in both the configuration of the extruder, as well as the design of individual components because of its structural properties and understanding the limit of the material.</p>
+
+												<img src="img/modal/architecture-button/work.JPG">
+												<p class = "description">Work space setup</p>
+												<img src="img/modal/architecture-button/printing.jpg">
+												<p class="description">Extruder in process of printing.</p>
+												<img src="img/modal/architecture-button/front.JPG">
+												<p class = "description">Front elevation of 1/8th Scaled model of the designed facade on MIT Media Lab.</p>
+												<img src="img/modal/architecture-button/angle.jpg">
+												<p class = "description">Close up of 3D printed facade on MIT Media Lab.</p>
+												<img src="img/modal/architecture-button/heatmaps.jpg">
+												<p class = "description">Day lighting analysis of grasshopper design output</p>
+		            						</div>
+		            					</div>
+		            				</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>Where Is the Architecture Button</strong><br>
+						<small>Connie Wang, Hanson Cheng, and Ana Cristina Baquerizo</small>
+					</div>
+					<div class = "post">
+						<a data-toggle="modal" data-target="#bathhouse">
+							<img src="img/thumbnails/bath.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="bathhouse" tabindex="-1" role="dialog" aria-labelledby="bathhouse-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		          					<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="bathhouse-label">Bathhouse</h4>
+										<h5>Andres Chang</h5> -->
+		            				</div>
+		            				<div class = "row">
+		            					<div class = "col-md-3">
+											<div class = "hidden-xs hidden-sm"> <!--only show static sidebar for large and medium displays -->
+												<h5 class = "modal-title" id = "bathhouse-label"><strong>Bathhouse</strong></h5><br>
+												<p><small><a href="http://www.andreschang.com/" target="_blank">Andres Chang</a> Geology/Physics/Math, Visual Art '17 Brown</small></p>
+												<p><small>Graphite and colored pencils</small></p>
+												<p><small>Drawings 14" x 17"</small></p>
+											</div>
+		            					</div>
+		            					<div class = "col-md-9">
+		            						<div class = "modal-body">
+		            							<div class = "hidden-md hidden-lg"> <!--just show content for small and xs displays-->
+													<h5 class = "modal-title" id = "bathhouse-label"><strong>Bathhouse</strong></h5><br>
+													<p><small><a href="http://www.andreschang.com/" target="_blank">Andres Chang</a> Geology/Physics/Math, Visual Art '17 Brown</small></p>
+													<p><small>Graphite and colored pencils</small></p>
+													<p><small>Drawings 14" x 17"</small></p>
+													<br>
+												</div>
+		            							<p>In Winter 2015, I took an introductory architecture course at RISD called Architectonics. Our first assignment was to map a physical phenomenon on our route from home to studio. I mapped potential danger by tracing continuous paths of motion, paying special attention to where these intersected with car routes, and identifying safe spaces. I worked with this concept for the entire class, which culminated in six final drawings of a bathhouse where dangerous intersections must be traversed in order to reach the suspended baths.</p>
+		            							
+												<img src="img/modal/bathhouse/finalisometric.jpg">
+												<p class="description">Final isometric drawing</p>
+												<img src="img/modal/bathhouse/finalroofplan.jpg">
+												<p class="description">Final roof plan</p>
+												<img src="img/modal/bathhouse/finalsection1.jpg">
+												<p class = "description">Bathhouse section I</p>
+												<img src="img/modal/bathhouse/finalsection2.jpg">
+												<p class = "description">Bathhouse section II</p>
+												<img src="img/modal/bathhouse/finalsection3.jpg">
+												<p class="description">Bathhouse section III</p>
+												<img src="img/modal/bathhouse/finalsiteplan.jpg">
+												<p class = "description">Bathhouse site plan</p>
+												<p>The project is conceptual, as it could be considered a piece of “visionary” architecture. The process was to draft an initial phenomenon map, which we then translated into three dimensions by building a model. Then, we drew sections and cuts of the model and used those to create a piece of architecture. Because my piece is built off of intersecting planes, I ended up using a lot of basic geometry and my initial sketches are covered in quick numerical calculations.</p>
+												<img src="img/modal/bathhouse/modelsection1.jpg">
+												<p class = "description">Model section I</p>
+												<img src="img/modal/bathhouse/modelsection2.jpg">
+												<p class = "description">Model section II</p>
+												<img src="img/modal/bathhouse/modelsection3.jpg">
+												<p class = "description">Model section III</p>
+												<img src="img/modal/bathhouse/phenomenonmap.jpg">
+												<p class = "description">Phenomenon map</p>
+		            						</div>
+		            					</div>
+		            				</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>Bathhouse</strong><br>
+						<small>Andres Chang</small>
+					</div>
+					<div class = "post">
+						<a data-toggle="modal" data-target="#bookwheel">
+							<img src="img/thumbnails/bookwheel.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="bookwheel" tabindex="-1" role="dialog" aria-labelledby="bookwheel-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		          					<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="bookwheel-label">Bookwheel Social Center</h4>
+										<h5>Stan Lichens</h5>-->
+		            				</div>
+		            				<div class = "row">
+		            					<div class = "col-md-3">
+											<div class = "hidden-xs hidden-sm"> <!--only show static sidebar for large and medium displays -->
+												<h5 class = "modal-title" id = "bookwheel-label"><strong>Bookwheel Social Center</strong></h5><br>
+												<p><small><a href="http://www.stanlichens.com/" target="_blank">Stan Lichens</a> RISD '80, Photography BFA</small></p>
+												<p><small>Wood</small></p>
+												<p><small>30" deep x 82" high</small></p>
+												<br>
+											</div>
+		            					</div>
+		            					<div class = "col-md-9">
+		            						<div class = "modal-body">
+		            							<div class = "hidden-md hidden-lg"> <!--just show content for small and xs displays-->
+													<h5 class = "modal-title" id = "bookwheel-label"><strong>Bookwheel Social Center</strong></h5><br>
+													<p><small><a href="http://www.stanlichens.com/" target="_blank">Stan Lichens</a> RISD '80, Photography BFA</small></p>
+													<p><small>Wood</small></p>
+													<p><small>30" deep x 82" high</small></p>
+													<br>
+												</div>
+		            							<p>During construction of the Poughkeepsie Day School Middle School space, it became clear that there was a need to center the space and provide a place to gather. The open center of the wheel focuses attention on the back wall of the Da Vinci science and art space, a defining feature of the Middle School.</p>
+		            							<p>The Dean of the Middle School, Laura Graceffa, worked closely with me on this book wheel project.</p>
+		            							<p>The entire Middle School was converted and renovated based on collaborative design sessions with the MS faculty, MS Dean and Fielding-Nair, a school space consulting firm. The bookwheel was added to the renovation project about mid-way through construction.</p>
+		            							<p>I am always trolling magazines, friends, and the web for interesting and compelling design ideas. I found the sculpture of books glued into a swinging wheel while looking at the web one evening.</p>
+		            							<img src="img/modal/bookwheel/original.jpg">
+												<p class = "description">Original circular bookcase sculpture [<a href="http://www.designsoak.com/intriguing-circular-bookshelf-by-david-garcia/" target = "_blank">by David Garcia</a>], part of the inspiration for the bookwheel. A sculpture made in Holland that has false books painted in primary colors and meant to swing on the pendulum shown in the photograph. This object was not meant to have a practical purpose.</p>
+
+												<img src="img/modal/bookwheel/drawing.jpg">
+												<p class="description">Bookwheel shop drawing</p>  
+		            							<p>There were a number of engineering changes made during initial construction of the wheel, having to do with the width of the lateral planking and the precise angle of the kerf on those same planks. Software was used to determine the kerf – 2.8 degrees. Cabinetry fabricators D-Cor Design created the internal core support system, to which the lateral planking was attached.</p>
+		            							<p>The wheel is built out of stained and lacquered Birch Baltic plywood, and stands 82” high, 30” deep.</p> 
+												
+												<img src="img/modal/bookwheel/construction.jpg">
+												<p class="description">The bookwheel under construction in the cabinetry shop, D-Cor Design, in Germantown, NY. Note the wheel has a core component, visible here, to which the lateral slats, for both the interior and exterior helix are attached to.</p>
+
+												<img src="img/modal/bookwheel/inside.jpg">
+												<p class = "description">Children enjoying themselves inside the wheel.</p>
+
+												<img src="img/modal/bookwheel/wedge.jpg">
+												<p class = "description">Wedges placed under each side of wheel to prevent wheel from moving on the floor.</p>
+
+												<p>Creating the internal core to attach the planking to posed a challenge during the design process. After testing, it was determined that an internal core was need, to provide the needed tensile strength for the surface planking. Also, determining the precise kerf angle cut for the lateral planks took several rounds of testing. Making sure the wheel could fit through door openings posed another challenge, requiring the height to beg precisely calculated to allow for transport and comfortable sitting space. After observing how the books sat on the shelves at various angles, the shelving partitions were doubled to allow the books to better fill the space.</p> 
+												<img src="img/modal/bookwheel/shelf.jpg">
+												<p class = "description">Construction detail of shelf interior, also showing edge.</p>
+
+												<img src="img/modal/bookwheel/slats.jpg">
+												<p class ="description">Detail showing the slats set at 2.8 degrees around the helical form.</p>
+
+												<img src="img/modal/bookwheel/using.jpg">
+												<p class = "description">Students sitting in the wheel, working with a card set designed by Charles Eames in the 1950s.</p>
+
+												<img src="img/modal/bookwheel/installed.jpg">
+												<p class = "description">The bookwheel installed in the Middle School Learning Commons</p>
+												<p>The bookwheel has been installed and in use at the Poughkeepsie Day School for 3 years.</p>
+		            						</div>
+		            					</div>
+		            				</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>Bookwheel Social Center</strong><br>
+						<small>Stan Lichens</small>
+					</div>
+					<div class = "post">
+						<a data-toggle="modal" data-target="#rock-bowls">
+							<img src="img/thumbnails/bowl.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="rock-bowls" tabindex="-1" role="dialog" aria-labelledby="rock-bowls-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		          					<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="rock-bowls-label">Rock Bowls</h4>
+										<h5>Eli Block</h5>-->
+		            				</div>
+		            				<div class = "row">
+		            					<div class = "col-md-3">
+											<div class = "hidden-xs hidden-sm"> <!--only show static sidebar for large and medium displays -->
+												<h5 class = "modal-title" id = "rock-bowls-label"><strong>Rock Bowls</strong></h5><br>
+												<p><small><a href="http://eli-block.com/" target="_blank">Eli Block</a> Brown/RISD '17, Industrial Design and Geobiology</small></p>
+												<p><small>Renders, 3D printed models, sketches, slip cast ceramics</small></p>
+												<p><small>Prototype 5.5" x 5.5" x 3.0"</small></p>
+											</div>
+		            					</div>
+		            					<div class = "col-md-9">
+		            						<div class = "modal-body">
+		            							<div class = "hidden-md hidden-lg"> <!--just show content for small and xs displays-->
+													<h5 class = "modal-title" id = "rock-bowls-label"><strong>Rock Bowls</strong></h5><br>
+													<p><small><a href="http://eli-block.com/" target="_blank">Eli Block</a> Brown/RISD '17, Industrial Design and Geobiology</small></p>
+													<p><small>Renders, 3D printed models, sketches, slip cast ceramics</small></p>
+													<p><small>Prototype 5.5" x 5.5" x 3.0"</small></p>
+													<br>
+												</div>
+		            							<p>A bowl series investigating the generation of natural forms through 3D modeling. The bowls began as sketches of rocks, became expressive 3D sculptures, were 3D printed, and then multiples were slip cast in porcelain using plaster molds formed from the original prototypes. I made many form studies during the course of the 3D modeling process, and each bowl is unique. Finally, the collection of forms was rendered in Rhino using Neon and Brazil.</p>
+		            							<div class = "row">
+		            								<div class = "col-sm-6">
+		            									<img src="img/modal/rock-bowls/sketches/1.jpg">
+		            								</div>
+		            								<div class = "col-sm-6">
+		            									<img src="img/modal/rock-bowls/sketches/2.jpg">
+		            								</div>
+		            							</div>
+		            							<br>
+		            							<div class = "row">
+		            								<div class = "col-sm-6">
+		            									<img src="img/modal/rock-bowls/sketches/3.jpg">
+		            								</div>
+		            								<div class = "col-sm-6">
+		            									<img src="img/modal/rock-bowls/sketches/4.jpg">
+		            								</div>
+		            							</div>
+		            							<p class="description">Sketches</p>
+												<img src="img/modal/rock-bowls/renderings/smallside.jpg">
+												<p class="description">Side view of a small rock bowl painted with gradients in Sculptris and rendered with a matte metallic surface.</p>
+												<img src="img/modal/rock-bowls/renderings/secondary.jpg">
+												<p class="description">Secondary view of a small rock bowl painted with gradients in Sculptris and rendered with a matte metallic surface.</p>
+												<img src="img/modal/rock-bowls/renderings/gold.jpg">
+												<p class="description">Gold, medium-sized rock bowl rendered with a matte metallic surface.</p>
+												<img src="img/modal/rock-bowls/renderings/complete.jpg">
+												<p class="description">Complete collection of iridescent metallic rock bowls rendered in Rhinoceros.</p>
+												<img src="img/modal/rock-bowls/renderings/completematte.jpg">
+												<p class="description">Complete collection of five different rock bowls rendered in matte neutral tan.</p>
+												<img src="img/modal/rock-bowls/renderings/vase.jpg">
+												<p class="description">Rock urn and plate rendered in matte neutral tan.</p>
+												<img src="img/modal/rock-bowls/3d.jpg">
+												<p class="description">3D printed prototype</p>
+												<img src="img/modal/rock-bowls/slipcast.jpg">
+												<p class="description">Smoothed slip cast porcelain rock bowl dried to leather hardness.</p>
+		            						</div>
+		            					</div>
+		            				</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>Rock Bowls</strong><br>
+						<small>Eli Block</small>
+					</div>
+					<div class = "post">
+						<a data-toggle="modal" data-target="#canto">
+							<img src="img/thumbnails/canto.JPG" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="canto" tabindex="-1" role="dialog" aria-labelledby="canto-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		          					<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="canto-label">Canto Glacier</h4>
+										<h5>Scarlett Xin Meng and Yanan Wu</h5>-->
+		            				</div>
+		            				<div class = "row">
+		            					<div class = "col-md-3">
+											<div class = "hidden-xs hidden-sm"> <!--only show static sidebar for large and medium displays -->
+												<h5 class = "modal-title" id = "canto-label"><strong>Canto Glacier</strong></h5><br>
+												<p><small><a href= "mailto:xmeng@risd.edu">Scarlett Xin Meng</a> RISD '16 Graphic Design MFA and Yanan Wu RISD '15 Landscape Architecture MLA</small></p>
+												<p><small>3D models and 2D diagrams</small></p>
+												<p><small>Scale model 18" x 24" x 7"</small></p>
+											</div>
+		            					</div>
+		            					<div class = "col-md-9">
+		            						<div class = "modal-body">
+		            							<div class = "hidden-md hidden-lg"> <!--just show content for small and xs displays-->
+													<h5 class = "modal-title" id = "canto-label"><strong>Canto Glacier</strong></h5><br>
+													<p><small><a href= "mailto:xmeng@risd.edu">Scarlett Xin Meng</a> RISD '16 Graphic Design MFA and Yanan Wu RISD '15 Landscape Architecture MLA</small></p>
+													<p><small>3D models and 2D diagrams</small></p>
+													<p><small>Scale model 18" x 24" x 7"</small></p>
+													<br>
+												</div>
+												<p>This proposed site-specific installation aims to provide a spatial contrast to the existing context (Historic Wing at Providence Public Library) through introducing a natural monolith, Glacier, into the humanistic space. It aims to create a meditative and immersive spatial experience where architecture and typography intersect, and to evoke an inquiry of the inner space.</p>
+												
+												<img src="img/modal/canto/diagram01.jpg">
+												<p class = "description">Preliminary Site Analysis + Installation Proposal <br>For the preliminary proposal, we followed rigid grid systems in combination with consideration of vantage points and existing spatial divisions (columns) on the site. </p>
+												<img src="img/modal/canto/diagram02.jpg">
+												<p class = "description">Revised Installation Model <br>We reconsidered the level of private and public experience when walking through the installation and refined our design based on a varying degree of private experience in the installation.</p>
+												<img src="img/modal/canto/diagram03.jpg">
+												<p class = "description">Typographic Rise Structures + Iterations <br>The series of revision for the typographic rise was based on consideration of legibility and security issues.</p>
+												<img src="img/modal/canto/prototype01.jpg">
+												<p class = "description">“Iceberg” Structure Prototype (Initial plan) <br>A study model of the iceberg structure to create spatial contrast</p>
+												<p>We constructed a series of study models to map out existing circulation and viewpoints, and worked carefully with the vantage points to formulate a relational dialogue between our installation and the site. We worked meticulously on 3D modeling and infographic diagrams in numerous iterations; we discussed over every piece of material used in physical models; we were also concerned about realistic issues including current requirements for railing, material use, lighting, etc. Our heated discussions throughout the whole process illustrated different foci in graphic design and landscape architecture in terms of our research modalities, artistic pursuit and practical concerns. Our different perspectives enriched the project on many levels, and always catalyzed new ideas and solutions.</p>
+												
+												<img src="img/modal/canto/prototype02.jpg">
+												<p class = "description">Rise / Elevation Prototype (Initial plan) <br>A study model of the spiral elevation to create dynamic walking experience</p>
+												<img src="img/modal/canto/prototype03.jpg">
+												<p class = "description">A study model of the site to simulate the existing circulation with the spatial division in the site</p>
+												<img src="img/modal/canto/prototypefinal01.jpg">
+												<p class = "description">Final model prototype, top view</p>
+												<img src="img/modal/canto/prototypefinal02.jpg">
+												<p class = "description">Final model prototype, front view</p>
+												<p>It was a great collaborative process that challenged our cross-disciplinary design thinking, and our ability to negotiate different methodologies to achieve optimal results in collaboration.</p>
+												<img src="img/modal/canto/prototypefinal03.jpg">
+												<p class = "description">Final model prototype, side view</p>
+
+		            						</div>
+		            					</div>
+		            				</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>Canto Glacier</strong><br>
+						<small>Scarlett Xin Meng and Yanan Wu</small>
+					</div>
+					<div class = "post">
+						<a data-toggle="modal" data-target="#dynamic-seating">
+							<img src="img/thumbnails/chair.JPG" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="dynamic-seating" tabindex="-1" role="dialog" aria-labelledby="dynamic-seating-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		          					<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="dynamic-seating-label">Dynamic Seating</h4>
+										<h5>Benjamin Basseches</h5>-->
+		            				</div>
+		            				<div class = "row">
+		            					<div class = "col-md-3">
+											<div class = "hidden-xs hidden-sm"> <!--only show static sidebar for large and medium displays -->
+												<h5 class = "modal-title" id = "dynamic-seating-label"><strong>Dynamic Seating</strong></h5><br>
+												<p><small><a href="https://benbasseches.wordpress.com/" target="_blank">Benjamin Basseches</a> Brown '15, Engineering</small></p>
+												<p><small>Wood and upholstery</small></p>
+												<p><small>1.5' x 2' x 3'</small></p>
+											</div>
+		            					</div>
+		            					<div class = "col-md-9">
+		            						<div class = "modal-body">
+		            							<div class = "hidden-md hidden-lg"> <!--just show content for small and xs displays-->
+													<h5 class = "modal-title" id = "dynamic-seating-label"><strong>Dynamic Seating</strong></h5><br>
+													<p><small><a href="https://benbasseches.wordpress.com/" target="_blank">Benjamin Basseches</a> Brown '15, Engineering</small></p>
+													<p><small>Wood and upholstery</small></p>
+													<p><small>1.5' x 2' x 3'</small></p>
+													<br>
+												</div>
+												<p>This project was inspired by the desire to incorporate fun and ergonomically beneficial movement into the act of sitting.  The amount of time people spend seated during school classes or desk jobs leads to poor posture, stiffness, and back pain. This is largely because traditional chairs with horizontal seats create a 90 degree angle between the the thighs and spine, which makes maintaining the natural lumbar curve difficult.  Having identified a problem of significant importance, I started designing a type of seating that would both encourage movement and allow for a half-sitting, half-standing position.</p>
+											
+												<div class = "row">
+													<div class="col-sm-4">
+														<img src="img/modal/dynamic-seating/sketch1.jpg">
+														<br>
+													</div>
+													<div class="col-sm-4">
+														<img src="img/modal/dynamic-seating/sketch2.jpg">
+														<br>
+													</div>
+													<div class="col-sm-4">
+														<img src="img/modal/dynamic-seating/sketch3.jpg">
+														<br>
+													</div>
+												</div>
+												<p class="description">Initial sketches for dynamic seating solutions.</p>
+												<img src="img/modal/dynamic-seating/laser.jpg">
+												<p class="description">Scale model made with laser cutter.</p>
+												<img src="img/modal/dynamic-seating/testing.jpg">
+												<p class="description">Mockup for testing pivoting motion and seat heights.</p>
+												<img src="img/modal/dynamic-seating/heights.jpg">
+												<p class="description">Determining the optimal seat heights and angles.</p><p>After some initial sketches and models, I created a simple mock-up out of two plywood boards with holes drilled at different heights, and a simple pivoting seat out of plywood and a dowel.  This quick mock-up allowed me to quickly test different seat heights and determine the desired range of height adjustment. Having identified the ideal sitting positions, I began the design of the side profiles, horizontal supports, and seat.</p>
+												
+												<img src="img/modal/dynamic-seating/underside.jpg">
+												<p class="description">Underside of seat base.</p>
+												<!--<p class="description">1771: Seat with foam-upholstered cushion.</p>-->
+												<img src="img/modal/dynamic-seating/cnc.jpg">
+												<p class="description">CNC routing the final side profiles.</p>
+												<img src="img/modal/dynamic-seating/progression.jpg">
+												<p class="description">Progression of mockups and prototypes.</p>
+												<p>The four pronged cutout pattern seen in the side profiles allows for simple manual height adjustment, by grabbing the seat and sliding it through the cutout path like a gear shifter.  The shape of the side profiles was chosen (through much experimenting in CAD) to subtly reflect the curve of the human spine.  I also made sure that the top of the profiles would not interfere with arm movement when the seat was at its lowest height. The front lateral support can be used as a footrest when the seat is high. The horizontal dowels follow the curve of the profiles, providing additional lateral support and creating more visual continuity with the profiles. The padded and upholstered seat cushion is very comfortable and provides friction to prevent sliding off the seat when it is angled.</p>
+												<img src="img/modal/dynamic-seating/final.jpg">
+												<p class="description">Final Prototype</p>
+												<img src="img/modal/dynamic-seating/action.jpg">
+												<p class="description">Dynamic Sit-Stand seating in action.</p>
+		            						</div>
+		            					</div>
+		            				</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>Dynamic Seating</strong><br>
+						<small>Benjamin Basseches</small>
+					</div>
+					<div class = "post">
+						<a data-toggle="modal" data-target="#internet-sensations">
+							<img src="img/thumbnails/internet.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="internet-sensations" tabindex="-1" role="dialog" aria-labelledby="internet-sensations-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		          					<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="internet-sensations-label">Internet Sensations Wand</h4>
+										<h5>Ijeoma Azodo and Horatio Han</h5>-->
+		            				</div>
+		            				<div class = "row">
+		            					<div class = "col-md-3">
+											<div class = "hidden-xs hidden-sm"> <!--only show static sidebar for large and medium displays -->
+												<h5 class = "modal-title" id = "internet-sensations-label"><strong>Internet Sensations Wand</strong></h5><br>
+												<p><small><a href="https://vivo.brown.edu/display/iazodo" target="_blank">Ijeoma Azodo</a> MD, ChM Master's in Clinical and Translational Research, Assistant Professor in Surgery and <a href="http://portfolios.risd.edu/hyx" target="_blank">Horatio Han</a> RISD '16 graduate student, Industrial Design</small></p>
+												<p><small>Multimedia</small></p>
+												<p><small>11" x 17" panels</small></p>
+											</div>
+		            					</div>
+		            					<div class = "col-md-9">
+		            						<div class = "modal-body">
+		            							<div class = "hidden-md hidden-lg"> <!--just show content for small and xs displays-->
+													<h5 class = "modal-title" id = "internet-sensations-label"><strong>Internet Sensations Wand</strong></h5><br>
+													<p><small><a href="https://vivo.brown.edu/display/iazodo" target="_blank">Ijeoma Azodo</a> MD, ChM Master's in Clinical and Translational Research, Assistant Professor in Surgery and <a href="http://portfolios.risd.edu/hyx" target="_blank">Horatio Han</a> RISD '16 graduate student, Industrial Design</small></p>
+													<p><small>Multimedia</small></p>
+													<p><small>11" x 17" panels</small></p>
+													<br>
+												</div>
+												<p>An exploration of the meaning of Body+Internet as a Wintersession project imagined by the Brown, RISD, and MIT STEAM clubs. An effort to bring together science, design and engineering to answer a question and culminate in a display. Our design process used multimodal collaboration to brainstorm, design and create our final project. The goal was to transform data into another form that is recognizable to other people and communities, exploring the trangible relationships between humans and cyberspace.</p>
+												<p><blockquote>"We are fascinated by internet sensations and have created an alternative way to experience such a digital phenomena."</blockquote></p>
+												<p>Internet Sensations: they are often viral, powerful, and somewhat irrational. Individual expressions can generate a buzz capable of influencing the collective attention of Internet users - what they will like, do, and care about. We have created an alternate way to experience such a digital phenomena. By transforming the popularity of Twitter hashtags into haptic feedback, we provide a way to physically interact with the Internet.</p>
+												<!--<img src="img/modal/internet-sensations/1.jpg">-->
+
+												<p>The initial concept was to measure biologic signals as evidence of the Internet's physical presence. The first rendition was a listening station. Twitter hashtags were translated into a repeating beat whose rate reflected teh hashtag's changing popularity on the Internet. The audience tapped into the pulse of the Internet around the selected hashtag using a stethoscope, similar to a doctor ausculating heart sounds.</p>
+
+												<img src="img/modal/internet-sensations/version1.jpg">
+												<p class = "description">Version 1 <br>Listening to the pulse of the Internet</p>
+
+												<p>The inadvertent discovery of a haptic feedback mechanism from the sound wave passing through the transducer into the listening stand inspired the sound version of the product. In order to emphasize a physical and tactile nature of the Internet, the Internet Sensations Wand was created.</p>
+												<p><blockquote>"The vibration intensity is determined by the popularity of certain hashtags. Users may search for any hashtag they wish, and then enjoy that hashtag's popularity through haptic feedback."</blockquote></p>
+												
+												<p>The Internet played a major role in the design and collaboration that brought the idea to product. The web-based conferencing tools, Skype and FaceTime, and project management apps, Slack and Google Drive, helped overcome the different physical locations and time availability of the team members. The code to translate trending #hashtags into a rhythm was written in Python code and accessed through a Twitter API.</p>
+												<img src="img/modal/internet-sensations/slack.jpg">
+												<p class = "description">Screenshot of Horatio and Rob (#team3) using Slack</p>
+
+												<img src="img/modal/internet-sensations/head.jpg">
+												<p class = "description">The massage head is modified from a transducer, which vibrates regularly according to the trending of the #hashtag.</p>
+
+												<img src="img/modal/internet-sensations/composite.jpg">
+												<p class = "description">This composite image shows the Python code to pull and count the #hashtags on the laptop screen. The Internet sensations wand, docking stand and laptop are displayed, and female user is shown using the Internet sensation wand.</p>
+		            						</div>
+		            					</div>
+		            				</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>Internet Sensations Wand</strong><br>
+						<small>Ijeoma Azodo and Horatio Han</small>
+					</div>
+					<div class = "post">
+						<a data-toggle="modal" data-target="#photographic-relief">
+							<img src="img/thumbnails/photographicrelief.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="photographic-relief" tabindex="-1" role="dialog" aria-labelledby="photographic-relief-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		          					<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="photographic-relief-label">Photographic Relief</h4>
+										<h5>Horatio Han</h5>-->
+		            				</div>
+		            				<div class = "row">
+		            					<div class = "col-md-3">
+											<div class = "hidden-xs hidden-sm"> <!--only show static sidebar for large and medium displays -->
+												<h5 class = "modal-title" id = "photographic-relief-label"><strong>Photographic Relief</strong></h5><br>
+												<p><small><a href="http://portfolios.risd.edu/hyx" target="_blank">Horatio Han</a> RISD '16 graduate student, Industrial Design</small></p>
+												<p><small>3D printing, image generating</small></p>
+												<p><small>11" x 17" images</small></p>
+											</div>
+		            					</div>
+		            					<div class = "col-md-9">
+		            						<div class = "modal-body">
+		            							<div class = "hidden-md hidden-lg"> <!--just show content for small and xs displays-->
+													<h5 class = "modal-title" id = "photographic-relief-label"><strong>Photographic Relief</strong></h5><br>
+													<p><small><a href="http://portfolios.risd.edu/hyx" target="_blank">Horatio Han</a> RISD '16 graduate student, Industrial Design</small></p>
+													<p><small>3D printing, image generating</small></p>
+													<p><small>11" x 17" images</small></p>
+													<br>
+												</div>
+												<p>Photographic Relief is an experimental process generating 3D reliefs from 2D image. The process combining Rhino's (3D modeling program) height field function to generating 3D surface and UV flatbed printer to apply color. This example demonstrates the process of turn photo of the Rocky Mountain into a 3D relief. With further development, such technique could be applied in art and design project as well as data visualization.</p>
+												<img src="img/modal/photographic-relief/prep.jpg">
+												<p class = "description">Preparing the image: the original photo was processed into a monochromatic image for Heightfield function in Rhino to process it.</p>
+												<img src="img/modal/photographic-relief/3dsurface.jpg">
+												<p class = "description">Creating the 3D surface: A relief surface was generated based on the light and dark from the original photo, which reflects the authentic details of the landscape.</p>
+												<img src="img/modal/photographic-relief/printing3d.jpg">
+												<p class = "description">Printing the 3D Plate: the 3D surface was printed out with ABS</p>
+												<img src="img/modal/photographic-relief/color.jpg">
+												<p class = "description">Appling color through UV Printing</p>
+												<img src="img/modal/photographic-relief/fresh.jpg">
+												<p class = "description">Fresh out the printer</p>
+												<img src="img/modal/photographic-relief/final.jpg">
+												<p class = "description">Final object</p>
+		            						</div>
+		            					</div>
+		            				</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>Photographic Relief</strong><br>
+						<small>Horatio Han</small>
+					</div>
+					<div class = "post">
+						<a data-toggle="modal" data-target="#radicalis">
+							<img src="img/thumbnails/radicalis.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="radicalis" tabindex="-1" role="dialog" aria-labelledby="radicalis-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		  		          			<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="radicalis-label">Radicalis</h4>
+										<h5>Michael Yurgeles</h5>-->
+		            				</div>
+		            				<div class = "row">
+		            					<div class = "col-md-3">
+											<div class = "hidden-xs hidden-sm"> <!--only show static sidebar for large and medium displays -->
+												<h5 class = "modal-title" id = "radicalis-label"><strong>Radicalis</strong></h5><br>
+												<p><small><a href="http://www.yurgeles.net/" target="_blank">Michael Yurgeles</a> RISD '85, Photography</small></p>
+												<p><small>Mixed media</small></p>
+												<p><small>16" x 20" book</small></p>
+											</div>
+		            					</div>
+		            					<div class = "col-md-9">
+		            						<div class = "modal-body">
+		            							<div class = "hidden-md hidden-lg"> <!--just show content for small and xs displays-->
+													<h5 class = "modal-title" id = "radicalis-label"><strong>Radicalis</strong></h5><br>
+													<p><small><a href="http://www.yurgeles.net/" target="_blank">Michael Yurgeles</a> RISD '85, Photography</small></p>
+													<p><small>Mixed media</small></p>
+													<p><small>16" x 20" book</small></p>
+													<br>
+												</div>
+												<p>Radicalis is an artists' book project that started as a family genealogy which evolved into a multi-layered, metaphoric exploration of word origins, natural cycles, and personal histories. The intended purpose is to create a limited edition to be made available to the public.</p>
+												<p>Journal entries, a number of book  "dummies", and structural models have lead to complex designs that I am in the process of simplifying.</p>
+												<img src="img/modal/radicalis/earth.jpg">
+												<p class="description">Earth (branch), 1/2 scale study</p>
+												<img src="img/modal/radicalis/frontback.jpg">
+												<p class="description">Front and Back covers, 1/2 scale study</p>
+												<img src="img/modal/radicalis/harmonize1.jpg">
+												<p class="description">Harmonize, one of two versions from 1/2 scale study</p>
+												<img src="img/modal/radicalis/harmonize2.jpg">
+												<p class="description">Harmonize, second version from 1/2 scale study</p>
+												<img src="img/modal/radicalis/issue.jpg">
+												<p class="description">Issue/Spawn, from 1/2 scale study</p>
+												
+		            						</div>
+		            					</div>
+		            				</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>Radicalis</strong><br>
+						<small>Michael Yurgeles</small>
+					</div>
+					<div class = "post">
+						<a data-toggle="modal" data-target="#simulation">
+							<img src="img/thumbnails/simulation.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="simulation" tabindex="-1" role="dialog" aria-labelledby="simulation-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		          					<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="simulation-label">Simulation</h4>
+										<h5>Christopher Sancomb</h5>-->
+		            				</div>
+		            				<div class = "row">
+		            					<div class = "col-md-3">
+											<div class = "hidden-xs hidden-sm"> <!--only show static sidebar for large and medium displays -->
+												<h5 class = "modal-title" id = "simulation-label"><strong>Simulation</strong></h5><br>
+												<p><small><a href="http://www.risd.edu/academics/sculpture/faculty/christopher-sancomb/" target="_blank">Christopher Sancomb</a>, RISD Sculpture professor</small></p>
+												<p><small>Rhino drawings, wood prototypes</small></p>
+												<p><small>18" x 24" images, 24" wood</small></p>
+											</div>
+		            					</div>
+		            					<div class = "col-md-9">
+		            						<div class = "modal-body">
+		            							<div class = "hidden-md hidden-lg"> <!--just show content for small and xs displays-->
+													<h5 class = "modal-title" id = "simulation-label"><strong>Simulation</strong></h5><br>
+													<p><small><a href="http://www.risd.edu/academics/sculpture/faculty/christopher-sancomb/" target="_blank">Christopher Sancomb</a>, RISD Sculpture professor</small></p>
+													<p><small>Rhino drawings, wood prototypes</small></p>
+													<p><small>18" x 24" images, 24" wood</small></p>
+													<br>
+												</div>
+												<p>The attached drawings are concept renderings for a large scale sculpture. The project began on paper, then moved into Rhino for a greater realization of scale and the surrounding space. Once the concept reached a stage of development where the forms needed to be made, I started working with wood to test scale, color, and surface, and to see the forms interacting in real space. The work in prototyping is ongoing, as the central element - the disk - is in its early stages. The work as a whole is an artistic representation of an unseeable moment.</p>
+												<img src="img/modal/simulation/1.jpg">
+												<p class="description"></p>
+												<img src="img/modal/simulation/2.jpg">
+												<p class="description"></p>
+												<img src="img/modal/simulation/3.jpg">
+												<p class="description"></p>
+												<img src="img/modal/simulation/4.jpg">
+												<p class="description"></p>
+												<img src="img/modal/simulation/5.jpg">
+												<p class="description"></p>
+		            						</div>
+		            					</div>
+		            				</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>Simulation</strong><br>
+						<small>Christopher Sancomb</small>
+					</div>
+					<div class = "post">
+						<a data-toggle="modal" data-target="#pavilion">
+							<img src="img/thumbnails/steam.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="pavilion" tabindex="-1" role="dialog" aria-labelledby="pavilion-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		         		          	<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="pavilion-label">STEAM Pavilion</h4>
+										<h5>STEAM and Pneuhaus</h5></h5>-->
+		            				</div>
+		            				<div class = "row">
+		            					<div class = "col-md-3">
+											<div class = "hidden-xs hidden-sm"> <!--only show static sidebar for large and medium displays -->
+												<h5 class = "modal-title" id = "pavilion-label"><strong>STEAM Pavilion</strong></h5><br>
+												<p><small><a href="http://steamwith.us/" target="_blank">Brown STEAM</a> in collaboration with <a href="http://www.pneuha.us/" target="_blank">Pneuhaus</a> – Matt Muller, Augie Lehrecke, Hunter Blackwell, Levi Bedall</small></p>
+												<p><small>Inflatable structure, nylon</small></p>
+												<p><small>60' diameter footprint, 40' diameter usable interior floor space, approx. 60-person capacity</small></p>
+											</div>
+		            					</div>
+		            					<div class = "col-md-9">
+		            						<div class = "modal-body">
+		            							<div class = "hidden-md hidden-lg"> <!--just show content for small and xs displays-->
+													<h5 class = "modal-title" id = "pavilion-label"><strong>STEAM Pavilion</strong></h5><br>
+													<p><small><a href="http://steamwith.us/" target="_blank">Brown STEAM</a> in collaboration with <a href="http://www.pneuha.us/" target="_blank">Pneuhaus</a> – Matt Muller, Augie Lehrecke, Hunter Blackwell, Levi Bedall</small></p>
+													<p><small>Inflatable structure, nylon</small></p>
+													<p><small>60" diameter footprint, 40" diameter usable interior floor space, approx. 60-person capacity</small></p>
+													<br>
+												</div>
+												<p><strong>About STEAM</strong></p>
+												<p>Brown <a href="http://steamwith.us/" target="_blank">STEAM</a> is a student-run organization that represents the integration of the STEM sciences (Science, Technology, Engineering, Math) with the Arts (humanities, art, design). We organize workshops, lectures, and projects that highlight the intersection of science and art, demonstrating how this fusion can yield provocative questions, explorations, and applications.</p>
+												<br>
+												<p><strong>The Concept</strong></p>
+												<p>The concept for the STEAM Pavilion began as a “what if” dream: <em>What if STEAM had its own building– a space specifically for STEAM events? What would that look like?</em></p>
+												<p>The idea came about after a semester of organizing STEAM events that were scattered across campus, in List Art Center, the Biomedical Center, Barus &amp; Holley / the Brown Design Workshop, the Science Center, the Rock, as well as at RISD. We also received some feedback that STEAM seemed too exclusive, and that our emphasis on student interest-driven projects– i.e. that we’re interested in every intersection of science and art that you’re interested in, from storytelling, dance, and neuroscience to math and education, not just biology/engineering and design– was lost on most of the student body. Brown STEAM is growing, thanks to many successful events and passionate students, but it is still not as accessible and visible as we’d like it to be.</p>
+												<p>That’s where the idea for a unifying, interdepartmental space came in. Conceptually, this space, called the STEAM Pavilion, will be an iconic, physical representation of our goals for STEAM’s presence on College Hill in Providence: accessible, versatile, and inspiring. We came up with these conceptual design goals after about three meetings with our collaborators, the designers from <a href="http://www.pneuha.us/" target="_blank">Pneuhaus</a>, a local design company founded by recent RISD furniture and Ohio State University architecture graduates.</p>
+												<br>
+												<p><strong>The Design Team</strong></p>Although I officially spearheaded this project, this endeavor was unique in that all members of the Brown STEAM student leadership team were involved. In other words, on top of other bioSTEAM, C+STEAM, educational outreach, and guest speaker events, we all got together to discuss our ideas for the Pavilion. The team consisted of myself (Engineering/Visual Art, Senior), Jonelle Ahiligwo (Biology/Public Health, Junior), Noah Schlottman (Environmental Students/Music, Junior), John Filmanowicz (Computer Science, Sophomore), Kenji Endo (Computer Science, Visual Art, Freshman), Chelsea Phan (Mechanical Engineering, Sophomore), Rana Ozdeslik (Molecular Pharmacology, Physiology, and Biotechnology, 4th year Graduate Student).</p>
+												<p>Prior to meeting Pneuhaus in September at the Better World by Design Conference, I had been considering constructing the Pavilion from lightweight plywood and metal hardware because I wanted the Pavilion to be easily assembled, disassembled and stored. As soon as I stepped in Pneuhaus’ RGBubble, a spacious pneumatic “bubble” lounge, at the Better World Conference, I rethought the materials selection for the Pavilion.</p>
+												<p>Pneumatics refer to things that use air, contained and pressurized, to perform an action or generate force. Pneuhaus specializes in creating pneumatic structures from nylon, the same material used in parachutes. We recognized that pneumatics make a lot of sense for our design goals; an inflatable structure is easy to assemble, clean, and easily assume different shapes. We pitched our idea for the STEAM Pavilion to Pneuhaus, and, to our delight, they matched our excitement to collaborate.</p>
+												<br>
+												<p><strong>The Design Process</strong></p>We met once a week for about a month during January 2015 to brainstorm ideas for the Pavilion layout and structure. We came up with several ideas for expressing the concepts of accessibility and openness while making a structural, versatile space (shown below).</p>
+												<p>Critically, our meetings were fueled by an excess of baked goods, tea, and craft paper turned tablecloth for sketching. We identified the most important aspects of the Pavilion to be:</p>
+												<ol>
+													<li>Portability: easy to put up, take down, and store; lightweight</li>
+													<li> Accessibility: intuitive to interact with</li>
+													<li>Versatility: able to host different types of events, such as presentations, workshops, and exhibits</li>
+													<li>Capacity: able to hold at least 40 people</li>
+													<li>Iconic: visually representative of STEAM</li>
+												</ol>
+												<p>From there, we sketched and sketched and sketched.</p>
+
+												<img src="img/modal/pavilion/omni.jpg">
+												<p class = "description">Toothed wall concept for "omnipermeability"</p>
+
+												<p>Eventually, we landed on the idea of a pentagonal shaped structure, symbolic of the “five” disciplines within STEAM. Every wall contains multiple slit-like doors, allowing the space to be entered and exited from any side. We also developed a design that would enable the division of the Pavilion into smaller rooms, using panels of nylon connected to attachment points on the Pavilion floor and ceiling. We addressed this challenge by designing veins of bungee cord into the ceiling for versatile clipping points, and weighted panels. This would allow us to reconfigure the Pavilion depending on the event.</p>
+
+												<img src="img/modal/pavilion/dividing.jpg">
+												<p class = "description">Methods of dividing the Pavilion into smaller spaces</p>
+
+												<img src="img/modal/pavilion/configurations.jpg">
+												<p class = "description">Selected major configurations of the STEAM Pavilion</p>
+
+												<img src="img/modal/pavilion/color.jpg">
+												<p class = "description">Door/wall color renderings</p>
+
+												<p>We designed the Pavilion to have a 60-person capacity, translating to a 40-ft interior footprint. We chose the Pavilion to be white with red accents at the doors, to indicate where to enter/exit. Pen plots and 3D prints of the design were used to visualize what the space would look like. We used Rhino and Grasshopper to model the Pavilion and generate a template for the nylon fabric and plastic floor.</p>
+
+												<img src="img/modal/pavilion/rhino.jpg">
+												<p class = "description">Early Rhino model of the STEAM Pavilion</p>
+
+												<br>
+												<p><strong>Construction</strong></p>
+												<p>This project was funded in part by the School of Engineering and in part by the Science Center. We purchased materials and organized hours to visit the Pneuhaus studio to construct the actual inflatable. Construction of the Pavilion consisted of cutting the materials, prepping the seams, and sewing.</p>
+
+												<img src="img/modal/pavilion/slit.jpg">
+												<p class = "description">Slit-door prototype</p>
+
+												<iframe src="https://player.vimeo.com/video/128372995?title=0&byline=0&portrait=0" width="500" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                								
+                								<p class = "description">Tooth prototype with robust seams</p>
+												<br>
+												<p><strong>The Future of the STEAM Pavilion</strong></p>
+												<p>The future of the STEAM Pavilion is full of potential. Because it is portable, the STEAM Pavilion can travel to different places on College Hill and beyond– for instance, to STEAM hubs at Yale and MIT. We hope to host many events in the fall and spring, and in doing so, develop different configurations and forms for the Pavilion as STEAM develops.</p>
+												<br>
+												<p><small>Description by <a href="mailto:victoria_wu@brown.edu">Victoria Wu</a><br>Read more about the STEAM Pavilion <a href="http://steamwith.us/content/catalogue/four" target="_blank">here.</a></small></p>
+		            						</div>
+		            					</div>
+		            				</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>STEAM Pavilion</strong><br>
+						<small>STEAM and Pneuhaus</small>
+					</div>
+					<div class = "post">
+						<a data-toggle="modal" data-target="#wearable-guitar">
+							<img src="img/thumbnails/wearable.jpg" class="img-responsive" alt="Click for more">
+						</a>
+						<br>
+	      				<!-- Modal -->
+	      				<div class="modal" id="wearable-guitar" tabindex="-1" role="dialog" aria-labelledby="wearable-guitar-label" aria-hidden="true">
+		        			<div class="modal-dialog">
+		          				<div class="modal-content">
+		          					<div class="modal-header">
+		              					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		              					<!--<h4 class="modal-title" id="wearable-guitar-label">Wearable Toy Guitar</h4>
+										<h5>Lily Fan</h5>-->
+		            				</div>
+		            				<div class = "row">
+		            					<div class = "col-md-3">
+											<div class = "hidden-xs hidden-sm"> <!--only show static sidebar for large and medium displays -->
+												<h5 class = "modal-title" id = "wearable-guitar-label"><strong>Wearable Toy Guitar</strong></h5><br>
+												<p><small><a href="https://www.behance.net/fanlily" target="_blank">Lily Fan</a> RISD '16, Industrial Design</small></p>
+												<p><small>Hand rendered, CAD, 3D printed</small></p>
+												<p><small>1.2" x 7"</small></p>
+											</div>
+		            					</div>
+		            					<div class = "col-md-9">
+		            						<div class = "modal-body">
+		            							<div class = "hidden-md hidden-lg"> <!--just show content for small and xs displays-->
+													<h5 class = "modal-title" id = "wearable-guitar-label"><strong>Wearable Toy Guitar</strong></h5><br>
+													<p><small><a href="https://www.behance.net/fanlily" target="_blank">Lily Fan</a> RISD '16, Industrial Design</small></p>
+													<p><small>Hand rendered, CAD, 3D printed</small></p>
+													<p><small>1.2" x 7"</small></p>
+													<br>
+												</div>
+												<p>The purpose of the project is to design a simple, intuitive, and durable musical toy for kids within the age group of 7­ - 12. The goal for the design is to stimulate their creativity and curiosity in seeking further understanding of music.</p>
+												<p>Before the design process, I spent some time researching the award-winning and bestselling toys within the age group. After pinpointing some common characteristics of these toys, I wanted to make this a wearable and transformable musical toy that also has DIY (do-it-yourself) features.</p>
+												<p>This project has taught me the importance of being a humble designer, to be open-minded, look beyond myself and seek the knowledge of others. Ultimately, product design is to design for people, design for an outcome.</p>
+												<img src="img/modal/wearable-guitar/1.gif">
+												<p class = "description">How it looks</p>
+												<img src="img/modal/wearable-guitar/2.jpg">
+												<p class = "description">Sketch 1</p>
+												<img src="img/modal/wearable-guitar/3.jpg">
+												<p class = "description">Sketch 2</p>
+												<img src="img/modal/wearable-guitar/4.jpg">
+												<p class = "description">Research</p>
+												<img src="img/modal/wearable-guitar/5.jpg">
+												<p class = "description">Fretboard</p>
+												<img src="img/modal/wearable-guitar/6.jpg">
+												<p class = "description">'Workslike' models</p>
+												<img src="img/modal/wearable-guitar/7.jpg">
+												<p class = "description">Prototype through 3D printing</p>
+												<img src="img/modal/wearable-guitar/8.jpg">
+												<p class = "description">Detail 1</p>
+												<img src="img/modal/wearable-guitar/9.jpg">
+												<p class = "description">Detail 2</p>
+												<img src="img/modal/wearable-guitar/10.jpg">
+												<p class = "description">Detail 3</p>
+												<img src="img/modal/wearable-guitar/11.jpg">
+												<p class = "description">Bracelet form</p>
+												<img src="img/modal/wearable-guitar/12.jpg">
+												<p class = "description">Guitar form</p>
+												<img src="img/modal/wearable-guitar/13.gif">
+												<p class = "description">Tuning</p>
+		            						</div>
+		            					</div>
+		            				</div>
+		        				</div><!-- /.modal-content -->
+		      				</div><!-- /.modal-dialog -->
+	    				</div><!-- /.modal -->
+						<br>
+						<strong>Wearable Toy Guitar</strong><br>
+						<small>Lily Fan</small>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class = "row spacer hidden-xs hidden-sm">
+				<div class="col-lg-12"></div>
+		</div>
+	</div> <!--end gallery container -->
+	<div class = "container" id = "visit">
+		<section id = "visit">
+			<div class="row"> <!--page header -->
+				<div class = "col-md-2">
+				</div>
+				<div class = "col-md-8">
+					<h2>Visit</h2>
+				</div>
+				<div class = "col-md-2">
+				</div>
+			</div>
 			<div class="row">
-				<div class = "col-xs-12 col-sm-9 col-md-7">
-					<h2>ABOUT</h2>
-					<p>Citizen + Virtual is a student-run Wintersession &amp; IAP Series led by RISD, Brown and MIT STEAM. What happens to society when our virtual existence has become so much a part of our identity? How do we behave on the internet? How do we develop and sustain community through our internet presence?  We aim to dissect and redefine the novel term of “digital citizen,” in its ethical, physical, and access-based considerations, exploring how we can be active contributors to the global digital space.</p>
-
-					<p>Over the course of the Citizen + Virtual series, the participating students will be asked what pillars of digital citizenship resonate with them as well as how to help fully realize the potential of these ideals through individual and collaborative works ranging from convention defying design concepts to speculative and inquisitive installations. Students get funding for their projects, opportunities to meet fascinating guest speakers, and access to the experience of talented mentors and peers.</p>
+				<div class = "col-md-2">
 				</div>
-				<div class = "col-sm-3 col-md-5"> <!--Plain-->
+				<div class = "col-md-4">
+					<h4>Address</h4>
+					<address>
+		  				<strong>Science Center</strong><br>
+		  				Brown University<br>
+		  				Sciences Library, 3rd Floor<br>
+		  				<a href="https://www.google.com/maps/place/Sciences+Library/@41.8269586,-71.4001563,17z/data=!3m1!4b1!4m2!3m1!1s0x89e4453b55d4f985:0xc4db82abe2ad6d17" target="_blank">201 Thayer Street</a><br>
+		  				Providence, <abbr title="Rhode Island">RI</abbr> 02912<br>
+		  				<abbr title="Phone">P:</abbr> (401) 863-6890 <br>
+		  				<abbr title="Email">E:</abbr> <a href="mailto:brownsciencecenter@gmail.com">brownsciencecenter@gmail.com</a>
+					</address>
+					<p>Located on the third floor of the <a href="http://library.brown.edu/about/scili/" target="_blank">Sciences Library</a>, the Science Center follows Sciences Library hours of operation. To view upcoming schedules and changes, please click <a href="http://library.brown.edu/hours/index.php?cur_library=hours_sci" target="_blank">here.</a></p>
+					<br>
+					<h4>Hours</h4>
+					<ul class="list-unstyled">
+						<li>Monday-Thursday: 8:30 am - 2:00 am</li>
+						<li>Friday: 8:30 am - 10:00 pm</li>
+						<li>Saturday: 10:00 am - 10:00 pm</li>
+						<li>Sunday: 10:00 am - 2:00 am</li><br/>
+						<li>Free and open to the public.</li>
+					</ul>
+				</div> <!--end left column-->
+				<div class = "col-md-4">
+					<h4>About the Science Center</h4>
+					<p>Brown University's <a href="http://www.brown.edu/academics/science-center/" target="_blank">Science Center</a> is a state-of-the-art facility that supports teaching and learning in the sciences. The Center houses academic mentoring and support programs and serves as the campus clearinghouse for information about research and fellowship opportunities at Brown and around the world. As a study, collaborative, and exhibit space, the Center brings together faculty and students from across the science disciplines. The Science Center promotes curricular innovation, helps students achieve their academic goals, and fosters a community of science at Brown.</p>
+					<br>
+					<ul class = "list-unstyled">
+						<li><i class="fa fa-home"></i> <a href="http://www.brown.edu/academics/science-center/" target="_blank">Website</a></li>
+						<li><i class="fa fa-facebook"></i> <a href= "https://www.facebook.com/BrownScienceCenter" target="_blank">Facebook</a></li>
+						<li><i class="fa fa-twitter"></i> <a href="https://twitter.com/BrownSciCenter" target="_blank">Twitter</a></li>
+						<li><i class="fa fa-instagram"></i> <a href="https://instagram.com/brownscicenter/" target="_blank">Instagram</a></li>
+					</ul>
+				</div><!--end right column -->
+				<div class = "col-md-2">
 				</div>
-			</div>
-			<div class = "large-spacer"></div>
+			</div> <!--end row div -->
 		</section>
-	</div> <!-- end about container -->
-	<div class = "fullpage container" id = "events">
-		<section id = "events">
+	</div> <!-- end visit container -->
+	<div class = "container" id = "team">
+		<section id = "team">
+			<div class = "row spacer hidden-xs hidden-sm">
+				<div class="col-lg-12"></div>
+			</div>
 			<div class="row"> <!--page header -->
-				<div class = "col-xs-12 col-sm-9 col-md-7">
-					<h2>EVENTS</h2>
-					<p>Along with the workshop series, we will also be events around RISD &amp; Brown that will be open for the public to attend!</p>
-
-					<p>Citizen + Virtual Presents:</p>
-					<p>Wednesday February 3rd, 2016 <br>
-					Internet’s Own Boy:  The Story of Aaron Swartz <br>
-					List Art Room 120 @ 7PM. <br>
-					64 College Street<br>
-					Providence RI, 02912</p>
-
-					<p>Friday February 5th, 2016
-					Digital Cosmopolitans: A talk by Ethan Zuckerman <br>
-					Chace Center @ 6:30pm<br>
-					20 North Main Street, <br>
-					Providence, RI 02903</p>
-
-					<p>Friday February 5th, 2016 <br>
-					Digital Cosmopolitans: A talk by Ethan Zuckerman <br> 
-					Design Center 1st Floor @ 8:00pm <br>
-					31 Canal Walk, Providence, RI 02903 </p>
+				<div class = "col-md-2">
 				</div>
-				<div class = "col-sm-3 col-md-5"> <!--Plain-->
+				<div class = "col-md-8">
+					<h2>Team</h2>
+				</div>
+				<div class = "col-md-2">
 				</div>
 			</div>
-			<div class = "medium-spacer"></div>
-		</section>
-	</div> <!--end events container -->
-	<div class = "fullpage container" id = "contact">
-		<section id = "contact">
-			<div class = "extra-large-spacer"></div>
-			<div class="row"> <!--page header -->
-				<div class = "col-xs-12 col-sm-9 col-md-7">
-					<div class = "hidden-xs hidden-sm" id="desktop">
-						<h1 style="text-align:left; margin-bottom: 30px;">Documentation on the Series will be coming out in late February.</h1>
-						<h1 style="text-align:left;">Reach out to <a href="mailto:info@steamwith.us">info@steamwith.us</a> with more questions and visit <a href = "http://steamwith.us/" target="_blank">steamwith.us</a> for more info about STEAM.</h1>
-					</div>
-					<div class = "hidden-md hidden-lg hidden-xl" id="mobile">
-						<h1 style="text-align:left; margin-bottom: 30px;">Documentation on the Series will be coming out in late February.</h1>
-						<h1 style="text-align:left;">Reach out to <a href="mailto:info@steamwith.us">info@steamwith.us</a> with more questions and visit <a href = "http://steamwith.us/" target="_blank">steamwith.us</a> for more info about STEAM.</h1>
-					</div>
-					<div class = "medium-spacer"></div>
-					<img src="img/MITSTEAM.png" id = "icon">
-					<img src="img/BUSTEAM.png" id = "icon">
-					<img src="img/BSTEAM.png" id = "icon">
-					<img src="img/RISDSTEAM.png" id = "icon">
-					<img src="img/CVSHORTENED.png" id = "icon">
+			<div class ="row">
+				<div class="col-md-2">
 				</div>
-				<div class = "col-sm-3 col-md-5"> <!--Plain-->
+				<div class = "col-md-4">
+					<div class ="bios">
+						<h4>Exhibit Staff</h4>
+						<!--
+						<p>Kenji Endo - Digital Curator <br><small>Test </small></p>
+						<p>Teri Minogue - Exhibit Curator <br><small>Test </small></p>
+						<p>Adele Ruppert - Exhibit Curator <br><small></small></p>
+						-->
+						<ul class ="list-unstyled">
+							<li><a href="mailto:colvin_endo@brown.edu">Kenji Endo</a> - Digital Curator</li>
+							<li><a href="mailto:teri_minogue@brown.edu">Teri Minogue</a> - Exhibit Curator</li>
+							<li><a href="mailto:adele_ruppert@brown.edu">Adele Ruppert</a> - Exhibit Curator</li>
+						</ul>
+					</div>
+					<div class = "thanks">
+						<h4>Special thanks to:</h4>
+						<ul class ="list-unstyled">
+							<li>Jodie Gill</li>
+							<li>David Targan</li>
+							<li>Geeta Chougule</li>
+							<li>Christine Mullen</li>
+							<li>Science Center student staff</li>
+						</ul>
+					</div>
+				</div>
+				<div class = "col-md-4">
+					<aside>
+						<p>Site made in 2015 with Orator Std, Draftsman, Font Awesome icons, built with Bootstrap, Masonry, Hypertext Markup Language, Cascading Style Sheets, and JQuery. Created by <a href ="http://ckendo.com" target="_blank">Kenji Endo</a>.</p>
+						<p>Squiggle adapted from Damien Newman's <a href="http://cargocollective.com/central/The-Design-Squiggle" target="_blank">"The Design Squiggle"</a></p>
+						<p>Say hello at <a href="mailto:brownsciencecenter@gmail.com">brownsciencecenter@gmail.com</a></p>
+					</aside>
+				</div>
+				<div class="col-md-2">
+				</div>
+			</div> <!--end row -->
+			<div class="row" style="margin-top:40px;"> <!--image -->
+				<div class = "col-md-2">
+				</div>
+				<div class = "col-md-8">
+					<img src = "img/squiggle.png" style="width:100%;">
+				</div>
+				<div class = "col-md-2">
 				</div>
 			</div>
-			<div class = "large-spacer"></div>
 		</section>
-	</div> <!--end events container -->
+	</div> <!--end team container -->
+	<div class = "container">
+		<div class = "row spacer hidden-xs hidden-sm">
+			<div class="col-lg-12"></div>
+		</div>
+		<div class = "row spacer">
+				<div class="col-lg-12"></div>
+		</div>
+		<footer class ="text-center">
+			<p><small>&copy; Brown University Science Center 2015. Images courtesy of the artists.</small></p>
+		</footer>
+	</div> <!-- end footer container -->
 
 	<!--Load javascript here (instead of head) for speed-->
 
@@ -150,7 +1046,100 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+	<!-- Include Masonry -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+	<!--<script src="js/masonry.pkgd.min.js"></script>-->
+
 	<script src="js/script.js"></script>
 
+	<!--for push menu-->
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie (for push menu)-->
+	<script src="js/classie.js"></script>
+
+	<!--push menu script via http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/-->
+	<script>
+		var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+			menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+			menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+			menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+			showLeft = document.getElementById( 'showLeft' ),
+			showRight = document.getElementById( 'showRight' ),
+			showTop = document.getElementById( 'showTop' ),
+			showBottom = document.getElementById( 'showBottom' ),
+			showLeftPush = document.getElementById( 'showLeftPush' ),
+			showRightPush = document.getElementById( 'showRightPush' ),
+			body = document.body;
+
+		/*
+		showLeft.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		};
+		showRight.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuRight, 'cbp-spmenu-open' );
+		};
+		showTop.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuTop, 'cbp-spmenu-open' );
+		};
+		showBottom.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuBottom, 'cbp-spmenu-open' );
+		};
+		*/
+		showLeftPush.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( body, 'cbp-spmenu-push-toright' );
+			classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		};
+		/*
+		showRightPush.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( body, 'cbp-spmenu-push-toleft' );
+			classie.toggle( menuRight, 'cbp-spmenu-open' );
+		};*/
+
+		/*Unique urls for modal windows */
+		if (window.location.hash == "#architecture-button") {
+     		$('#architecture-button').modal('show');
+		}
+		if (window.location.hash == "#bathhouse") {
+     		$('#bathhouse').modal('show');
+		}
+		if (window.location.hash == "#bookwheel") {
+     		$('#bookwheel').modal('show');
+		}
+		if (window.location.hash == "#rock-bowls") {
+     		$('#rock-bowls').modal('show');
+		}
+		if (window.location.hash == "#canto") {
+     		$('#canto').modal('show');
+		}
+		if (window.location.hash == "#dynamic-seating") {
+     		$('#dynamic-seating').modal('show');
+		}
+		if (window.location.hash == "#internet-sensations") {
+     		$('#internet-sensations').modal('show');
+		}
+		if (window.location.hash == "#photographic-relief") {
+     		$('#photographic-relief').modal('show');
+		}
+		if (window.location.hash == "#radicalis") {
+     		$('#radicalis').modal('show');
+		}
+		if (window.location.hash == "#simulation") {
+     		$('#simulation').modal('show');
+		}
+		if (window.location.hash == "#pavilion") {
+     		$('#pavilion').modal('show');
+		}
+		if (window.location.hash == "#wearable-guitar") {
+     		$('#wearable-guitar').modal('show');
+		}
+
+	</script>
 </body>
 </html>
